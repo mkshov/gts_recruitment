@@ -4,9 +4,18 @@ import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 
 const CustomButton = styled(Button)(({ theme }) => ({}));
-const ContainedButton = ({ children, width, height, ml, styles, onClick }) => {
+const ContainedButton = ({
+  children,
+  width,
+  height,
+  ml,
+  styles,
+  onClick,
+  bgColor,
+  color,
+}) => {
   const buttonStyles = {
-    color: "#FCFCFD",
+    color: color || "#FCFCFD",
     fontFamily: "'DM Sans', sans-serif",
     fontSize: "16px",
     fontStyle: "normal",
@@ -15,7 +24,8 @@ const ContainedButton = ({ children, width, height, ml, styles, onClick }) => {
     letterSpacing: "0.08px",
     padding: "14px 50px",
     borderRadius: "32px",
-    backgroundColor: "#3598DB !important",
+    textTransform: "none",
+    backgroundColor: bgColor ? `${bgColor} !important` : "#3598DB !important",
     ...styles, // Можете передать дополнительные стили извне
   };
 

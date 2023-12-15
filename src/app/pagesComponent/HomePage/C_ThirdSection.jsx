@@ -19,25 +19,25 @@ import {
   ThirdSecTitle,
 } from "./styled";
 
-export default function ThirdSection() {
+export default function C_ThirdSection() {
   return (
     <ThirdSec>
       <ThirdSecTitle>Key employees</ThirdSecTitle>
       <ThirdSecPeopleGroup>
         <ThirdSecPeople>
           <ThirdSecPeopleImgBox>
-            <ThirdSecPeopleImg src={people1} />
+            <ThirdSecPeopleImg alt="people human employees gts" src={people1} />
           </ThirdSecPeopleImgBox>
           <ThirdSecPeopleName>Jerome Bell</ThirdSecPeopleName>
           <ThirdSecPeopleDesc>
             <ThirdSecPeopleDescInner>
-              <ThirdSecPeopleIcon src={checkmark} />
+              <ThirdSecPeopleIcon alt="checkmark icon" src={checkmark} />
               <ThirdSecPeopleDescInnerText>
                 Co-creator of GTS
               </ThirdSecPeopleDescInnerText>
             </ThirdSecPeopleDescInner>
             <ThirdSecPeopleDescInner>
-              <ThirdSecPeopleIcon src={checkmark} />
+              <ThirdSecPeopleIcon alt="checkmark icon" src={checkmark} />
               <ThirdSecPeopleDescInnerText>
                 Investor at Sebo Digital <br /> Ventures
               </ThirdSecPeopleDescInnerText>
@@ -46,16 +46,16 @@ export default function ThirdSection() {
         </ThirdSecPeople>
         <ThirdSecPeople alignSelf="end">
           <ThirdSecPeopleImgBox>
-            <ThirdSecPeopleImg src={people2} />
+            <ThirdSecPeopleImg alt="people human employees gts" src={people2} />
           </ThirdSecPeopleImgBox>
           <ThirdSecPeopleName>Annette Black</ThirdSecPeopleName>
           <ThirdSecPeopleDesc>
             <ThirdSecPeopleDescInner>
-              <ThirdSecPeopleIcon src={checkmark} />
+              <ThirdSecPeopleIcon alt="checkmark icon" src={checkmark} />
               <ThirdSecPeopleDescInnerText>VP GTS</ThirdSecPeopleDescInnerText>
             </ThirdSecPeopleDescInner>
             <ThirdSecPeopleDescInner>
-              <ThirdSecPeopleIcon src={checkmark} />
+              <ThirdSecPeopleIcon alt="checkmark icon" src={checkmark} />
               <ThirdSecPeopleDescInnerText>
                 Co-founder at GTS
               </ThirdSecPeopleDescInnerText>
@@ -64,18 +64,21 @@ export default function ThirdSection() {
         </ThirdSecPeople>
         <ThirdSecPeople>
           <ThirdSecPeopleImgBox>
-            <ThirdSecPeopleImg src={people3} />
+            <ThirdSecPeopleImg
+              alt="people human employees ceo gts"
+              src={people3}
+            />
           </ThirdSecPeopleImgBox>
           <ThirdSecPeopleName>Jacob Jones</ThirdSecPeopleName>
           <ThirdSecPeopleDesc>
             <ThirdSecPeopleDescInner>
-              <ThirdSecPeopleIcon src={checkmark} />
+              <ThirdSecPeopleIcon alt="checkmark icon" src={checkmark} />
               <ThirdSecPeopleDescInnerText>
                 CEO at GTS
               </ThirdSecPeopleDescInnerText>
             </ThirdSecPeopleDescInner>
             <ThirdSecPeopleDescInner>
-              <ThirdSecPeopleIcon src={checkmark} />
+              <ThirdSecPeopleIcon alt="checkmark icon" src={checkmark} />
               <ThirdSecPeopleDescInnerText>
                 Investor at GTS Digital Ventures
               </ThirdSecPeopleDescInnerText>
@@ -84,19 +87,19 @@ export default function ThirdSection() {
         </ThirdSecPeople>
         <ThirdSecPeople alignSelf="end">
           <ThirdSecPeopleImgBox>
-            <ThirdSecPeopleImg src={people4} />
+            <ThirdSecPeopleImg alt="people human employees gts" src={people4} />
           </ThirdSecPeopleImgBox>
 
           <ThirdSecPeopleName>Eleanor Pena</ThirdSecPeopleName>
           <ThirdSecPeopleDesc>
             <ThirdSecPeopleDescInner>
-              <ThirdSecPeopleIcon src={checkmark} />
+              <ThirdSecPeopleIcon alt="checkmark icon" src={checkmark} />
               <ThirdSecPeopleDescInnerText>
                 Founder of GTS
               </ThirdSecPeopleDescInnerText>
             </ThirdSecPeopleDescInner>
             <ThirdSecPeopleDescInner>
-              <ThirdSecPeopleIcon src={checkmark} />
+              <ThirdSecPeopleIcon alt="checkmark icon" src={checkmark} />
               <ThirdSecPeopleDescInnerText>
                 Investor at GTS
               </ThirdSecPeopleDescInnerText>

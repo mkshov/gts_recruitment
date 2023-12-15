@@ -1,8 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Container, CssBaseline, ThemeProvider } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "@/utils/ThemeRegistry";
-import Head from "next/head";
 import Header from "@/components/Header/Header";
 import AOSWrapper from "@/utils/aosInit";
 
@@ -24,10 +23,9 @@ export default function RootLayout({ children }) {
         </head>
         <AOSWrapper>
           <body className={inter.className}>
-            <Container maxWidth="lg">
-              <Header />
-              {children}
-            </Container>
+            {console.log("lol")}
+            <Header />
+            {children}
           </body>
         </AOSWrapper>
       </html>

@@ -23,8 +23,9 @@ const base = createTheme({
       xs: 0,
       sm: 750,
       md: 960,
-      lg: 1200,
+      lg: 1350,
       xl: 1920,
+      my: 1400,
     },
   },
 });
