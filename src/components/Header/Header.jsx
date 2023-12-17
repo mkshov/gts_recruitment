@@ -13,11 +13,15 @@ import {
 } from "./styled";
 import logo from "../../images/svg/logo.svg";
 import { FirstSecSquare } from "@/app/pagesComponent/HomePage/styled";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
+  const router = useRouter();
+
   const [isHidden, setIsHidden] = useState(false);
+  const [isBack, setIsBack] = useState(false);
   console.log("isHidden: ", isHidden);
-  const scrollThreshold = 50;
+  const scrollThreshold = 150;
 
   const handleScroll = () => {
     if (window.scrollY > scrollThreshold) {
@@ -26,27 +30,33 @@ export default function Header() {
       setIsHidden(false);
     }
   };
-  if (window.location.pathname === "/") {
-    console.log("Вы находитесь на главной странице.");
-  } else {
-    console.log("Вы не находитесь на главной странице.");
-  }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    if (window.location.pathname === "/") {
+      window.addEventListener("scroll", handleScroll);
+      setIsBack(false);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    } else {
+      setIsBack(true);
+    }
   }, []);
+
+  const handleNavigate = (path) => (e) => {
+    router.push(path);
+  };
   return (
-    <HeaderBack>
+    <HeaderBack isHidden={isHidden} isBack={isBack}>
       <Container maxWidth="lg">
-        <GTSHeader isHidden={isHidden}>
-          <HeaderImageBox>
+        <GTSHeader>
+          <HeaderImageBox onClick={handleNavigate("/")}>
             <Image src={logo} alt="GTS Logo logo recruitment" />
           </HeaderImageBox>
           <HeaderNav>
-            <HeaderLink>Who we are</HeaderLink>
+            <HeaderLink onClick={handleNavigate("/about")}>
+              Who we are
+            </HeaderLink>
             <HeaderLink>What we do</HeaderLink>
             <HeaderLink>Join our tribe</HeaderLink>
             <HeaderLink>Contact us</HeaderLink>

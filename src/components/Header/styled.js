@@ -2,8 +2,9 @@
 import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
 
-export const HeaderBack = styled("div")(({}) => ({
-  // background: "#F9F9FB",
+export const HeaderBack = styled("div")(({ isHidden, isBack }) => ({
+  background: isBack ? "#F9F9FB" : isHidden ? "#F9F9FB" : "transparent",
+  transition: "0.4s",
   position: "sticky",
   top: "0",
   zIndex: "100",
@@ -14,11 +15,16 @@ export const GTSHeader = styled("header")(({}) => ({
   gap: "40px",
   padding: "15px 15px 15px 0",
   borderBottomRightRadius: "20px",
-  // background: "#F9F9FB",
+
   // background: "red",
 }));
 export const HeaderImageBox = styled("div")(({}) => ({
   // marginLeft: "25px",
+  cursor: "pointer",
+  transition: ".3s",
+  "&:hover": {
+    transform: "scale(1.1)",
+  },
 }));
 
 export const HeaderNav = styled("nav")(({}) => ({
