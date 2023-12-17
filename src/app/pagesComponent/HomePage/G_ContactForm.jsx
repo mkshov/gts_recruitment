@@ -31,11 +31,11 @@ export default function G_ContactForm() {
         <ContactSectionInfoGroup>
           <ContactSectionInnerInfo>
             <Image alt="phone icon" src={phoneIcon} />
-            <p>+1 432 1234 234</p>
+            <p>+41 799 276 133</p>
           </ContactSectionInnerInfo>
           <ContactSectionInnerInfo>
             <Image alt="email icon" src={emailIcon} />
-            <p>hello@gts.com</p>
+            <p>contact@gtsrecruitment.ch</p>
           </ContactSectionInnerInfo>
           <ContactSectionInnerInfo>
             <Image alt="location geo icon" src={locationIcon} />

@@ -4,6 +4,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "@/utils/ThemeRegistry";
 import Header from "@/components/Header/Header";
 import AOSWrapper from "@/utils/aosInit";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,9 +24,9 @@ export default function RootLayout({ children }) {
         </head>
         <AOSWrapper>
           <body className={inter.className}>
-            {console.log("lol")}
             <Header />
             {children}
+            <Footer />
           </body>
         </AOSWrapper>
       </html>
