@@ -374,6 +374,7 @@ export const ContactSection = styled("section")(({}) => ({
   marginTop: "170px",
   display: "flex",
   justifyContent: "space-between",
+  marginBottom: "65px",
 }));
 export const ContactSectionInner = styled("div")(({}) => ({
   maxWidth: "420px",

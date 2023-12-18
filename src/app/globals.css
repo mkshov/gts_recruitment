@@ -6,3 +6,7 @@
 body {
   color: #000;
 }
+
+.link_active {
+  color: #0f6dba;
+}

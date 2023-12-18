@@ -5,7 +5,6 @@ export const GTSFooter = styled("footer")(({}) => ({
   background: "#021638",
   color: "#C5C5C5",
   padding: "120px 0 25px 0",
-  marginTop: "65px",
 }));
 
 export const FooterInner = styled("div")(({}) => ({

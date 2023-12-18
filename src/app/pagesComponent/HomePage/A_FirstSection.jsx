@@ -24,7 +24,11 @@ import briefcase from "../../../images/svg/briefcase.svg";
 export default function A_FirstSection() {
   return (
     <FirstSec>
-      <FirstSecInner1>
+      <FirstSecInner1
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <MainText>Your business is our talents</MainText>
         <Description>
           A specialized method of personnel selection aimed at identifying and
@@ -48,7 +52,11 @@ export default function A_FirstSection() {
           src={background}
         />
 
-        <FirstSecFound>
+        <FirstSecFound
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <Image alt="briefcase icon" src={briefcase} />
           <FirstSecFoundTitle1>20,554+</FirstSecFoundTitle1>
           <FirstSecFoundTitle2>Specialists found</FirstSecFoundTitle2>

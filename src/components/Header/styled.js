@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
 
 export const HeaderBack = styled("div")(({ isHidden, isBack }) => ({
-  background: isBack ? "#F9F9FB" : isHidden ? "#F9F9FB" : "transparent",
+  background: isBack ? "#fff" : isHidden ? "#fff" : "transparent",
   transition: "0.4s",
   position: "sticky",
   top: "0",
@@ -41,4 +41,8 @@ export const HeaderLink = styled("a")(({ theme, c, w }) => ({
   letterSpacing: "0.08px",
   fontFamily: "'DM Sans', sans-serif",
   cursor: "pointer",
+  transition: ".2s",
+  "&:hover": {
+    color: "#0F6DBA",
+  },
 }));

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { Box, Container } from "@mui/material";
 
@@ -13,23 +13,22 @@ import {
 } from "./styled";
 import logo from "../../images/svg/logo.svg";
 import { FirstSecSquare } from "@/app/pagesComponent/HomePage/styled";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function Header() {
   const router = useRouter();
+  const url = usePathname();
 
   const [isHidden, setIsHidden] = useState(false);
   const [isBack, setIsBack] = useState(false);
-  console.log("isHidden: ", isHidden);
-  const scrollThreshold = 150;
 
-  const handleScroll = () => {
-    if (window.scrollY > scrollThreshold) {
+  const handleScroll = useCallback(() => {
+    if (window.scrollY > 150) {
       setIsHidden(true);
     } else {
       setIsHidden(false);
     }
-  };
+  }, []);
 
   useEffect(() => {
     if (window.location.pathname === "/") {
@@ -41,7 +40,7 @@ export default function Header() {
     } else {
       setIsBack(true);
     }
-  }, []);
+  }, [url]);
 
   const handleNavigate = (path) => (e) => {
     router.push(path);
@@ -54,13 +53,36 @@ export default function Header() {
             <Image src={logo} alt="GTS Logo logo recruitment" />
           </HeaderImageBox>
           <HeaderNav>
-            <HeaderLink onClick={handleNavigate("/about")}>
+            <HeaderLink
+              className={url === "/about-us" ? "link_active" : null}
+              onClick={handleNavigate("/about-us")}
+            >
               Who we are
             </HeaderLink>
-            <HeaderLink>What we do</HeaderLink>
-            <HeaderLink>Join our tribe</HeaderLink>
-            <HeaderLink>Contact us</HeaderLink>
-            <HeaderLink>Reviews</HeaderLink>
+            <HeaderLink
+              onClick={handleNavigate("/what-we-do")}
+              className={url === "/what-we-do" ? "link_active" : null}
+            >
+              What we do
+            </HeaderLink>
+            <HeaderLink
+              onClick={handleNavigate("/join-us")}
+              className={url === "/join-us" ? "link_active" : null}
+            >
+              Join us
+            </HeaderLink>
+            <HeaderLink
+              onClick={handleNavigate("/contact-us")}
+              className={url === "/contact-us" ? "link_active" : null}
+            >
+              Contact us
+            </HeaderLink>
+            <HeaderLink
+              onClick={handleNavigate("/reviews")}
+              className={url === "/reviews" ? "link_active" : null}
+            >
+              Reviews
+            </HeaderLink>
             <div
               style={{
                 display: "flex",
