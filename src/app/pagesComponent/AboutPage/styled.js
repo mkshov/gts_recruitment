@@ -14,6 +14,7 @@ export const AboutSec1 = styled("div")(({}) => ({
   alignItems: "center",
   justifyContent: "center",
   gap: "24px",
+  textTransform: "uppercase",
   "& > p:first-of-type": {
     fontSize: "56px",
     lineHeight: "68px",

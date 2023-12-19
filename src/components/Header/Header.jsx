@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
 
 import { Box, Container } from "@mui/material";
 
@@ -12,39 +11,10 @@ import {
   HeaderNav,
 } from "./styled";
 import logo from "../../images/svg/logo.svg";
-import { FirstSecSquare } from "@/app/pagesComponent/HomePage/styled";
-import { useRouter, usePathname } from "next/navigation";
+import useHeaderFunctions from "./HeaderFunctions";
 
 export default function Header() {
-  const router = useRouter();
-  const url = usePathname();
-
-  const [isHidden, setIsHidden] = useState(false);
-  const [isBack, setIsBack] = useState(false);
-
-  const handleScroll = useCallback(() => {
-    if (window.scrollY > 150) {
-      setIsHidden(true);
-    } else {
-      setIsHidden(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (window.location.pathname === "/") {
-      window.addEventListener("scroll", handleScroll);
-      setIsBack(false);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    } else {
-      setIsBack(true);
-    }
-  }, [url]);
-
-  const handleNavigate = (path) => (e) => {
-    router.push(path);
-  };
+  const { isHidden, isBack, url, handleNavigate } = useHeaderFunctions();
   return (
     <HeaderBack isHidden={isHidden} isBack={isBack}>
       <Container maxWidth="lg">

@@ -12,7 +12,7 @@ export default function AboutPage() {
     <AboutMain>
       <AboutSec1>
         <p>Who we are</p>
-        <p>A CUSTOMIZED SUIT FOR COMPANIES</p>
+        <p>gts - is a leading recruitment company</p>
       </AboutSec1>
       <Container maxWidth="lg">
         <B_SecondSection />
