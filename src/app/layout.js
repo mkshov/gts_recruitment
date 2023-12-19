@@ -5,6 +5,7 @@ import theme from "@/utils/ThemeRegistry";
 import Header from "@/components/Header/Header";
 import AOSWrapper from "@/utils/aosInit";
 import Footer from "@/components/Footer/Footer";
+import GTSSpeedDial from "@/components/SpeedDial";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
             <Header />
             {children}
             <Footer />
+            <GTSSpeedDial />
           </body>
         </AOSWrapper>
       </html>
