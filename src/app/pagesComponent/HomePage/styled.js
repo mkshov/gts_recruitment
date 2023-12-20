@@ -440,6 +440,7 @@ export const ContactSectionForm = styled("form")(({}) => ({
 }));
 
 export const ContactSectionFormInner = styled("div")(({ theme, height }) => ({
+  width: "100%",
   p: {
     fontFamily: " DM Sans, sans-serif",
     fontSize: "14px",
@@ -472,6 +473,7 @@ export const ContactSectionFormInner = styled("div")(({ theme, height }) => ({
     border: "1px solid #E9EBED",
     // transition: "border 0.3s ease-in-out",
     outline: "none",
+    height: height || "auto",
 
     "&:focus": {
       border: "2px solid #3598db",

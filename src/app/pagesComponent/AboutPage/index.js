@@ -16,7 +16,7 @@ export default function AboutPage() {
       </AboutSec1>
       <Container maxWidth="lg">
         <B_SecondSection />
-        <C_ThirdSection />
+        {/* <C_ThirdSection /> */}
       </Container>
       <F_SixthSection />
     </AboutMain>

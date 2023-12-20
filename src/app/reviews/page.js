@@ -1,5 +1,141 @@
-import React from "react";
-
+import Image from "next/image";
+import people1 from "../../images/svg/people1.svg";
+import people2 from "../../images/svg/people2.svg";
+import people3 from "../../images/people3.png";
+import people4 from "../../images/svg/people4.svg";
+import quote from "../../images/svg/quote.svg";
+import wave from "../../images/Wave.png";
+import { Container } from "@mui/material";
+import { PagesBackgroundSec } from "../what-we-do/style";
+import {
+  Reviews,
+  ReviewsAvatar,
+  ReviewsAvatarText,
+  ReviewsCard,
+  ReviewsDescription,
+  ReviewsInner,
+  ReviewsMain,
+} from "./styled";
 export default function page() {
-  return <div>page</div>;
+  return (
+    <Reviews>
+      <PagesBackgroundSec>
+        <p>Reviews</p>
+        <p>
+          If you need our help, have questions about how to use the GTS or are
+          experiencing technical difficulties, please do not hesitate to contact
+          us.
+        </p>
+        <Image alt="picture of a wave backdrop background" src={wave} />
+      </PagesBackgroundSec>
+      <ReviewsMain>
+        <Container maxWidth="lg">
+          <ReviewsInner>
+            <ReviewsCard>
+              <Image src={quote} alt="quote up" />
+              <ReviewsAvatar>
+                <Image src={people1} alt="review people avatar" />
+                <ReviewsAvatarText>
+                  <p>Sarah Conor</p>
+                  <p>Business woman</p>
+                </ReviewsAvatarText>
+              </ReviewsAvatar>
+              <ReviewsDescription>
+                Cooperation with GTS Recruitment has become a key point in our
+                search for highly qualified specialists. Their professionalism,
+                efficiency and unique recruitment method allowed us to form a
+                strong team of experts. We recommend GTS Recruitment as a
+                reliable partner in personnel solutions.
+              </ReviewsDescription>
+            </ReviewsCard>
+            <ReviewsCard>
+              <Image src={quote} alt="quote up" />
+              <ReviewsAvatar>
+                <Image src={people2} alt="review people avatar" />
+                <ReviewsAvatarText>
+                  <p>Marta Freedman</p>
+                  <p>Business woman</p>
+                </ReviewsAvatarText>
+              </ReviewsAvatar>
+              <ReviewsDescription>
+                We have been working with GTS Recruitment for several years now
+                and they continue to exceed our expectations. Their team is
+                always ready for a personalized approach, providing us with
+                outstanding candidates. Thank you for your reliability and
+                professionalism!
+              </ReviewsDescription>
+            </ReviewsCard>
+            <ReviewsCard>
+              <Image src={quote} alt="quote up" />
+              <ReviewsAvatar>
+                <Image src={people3} alt="review people avatar" />
+                <ReviewsAvatarText>
+                  <p>Tom Mish</p>
+                  <p>Project Manager</p>
+                </ReviewsAvatarText>
+              </ReviewsAvatar>
+              <ReviewsDescription>
+                GTS Recruitment is not just a recruitment company, it is our
+                reliable strategic partner. They have a deep understanding of
+                our needs and their specialized recruitment method provides us
+                with the best talent in the industry. Without a doubt, GTS
+                Recruitment makes our business even stronger.
+              </ReviewsDescription>
+            </ReviewsCard>
+            <ReviewsCard>
+              <Image src={quote} alt="quote up" />
+              <ReviewsAvatar>
+                <Image src={people4} alt="review people avatar" />
+                <ReviewsAvatarText>
+                  <p>Carla Uclary</p>
+                  <p>Model</p>
+                </ReviewsAvatarText>
+              </ReviewsAvatar>
+              <ReviewsDescription>
+                GTS Recruitment is a real pleasure to work with. They provided
+                us with not just candidates, but true leaders who contributed
+                enormously to our success. Efficiency, professionalism and
+                excellent understanding of the labor market are the key features
+                that make GTS Recruitment leading in their field.
+              </ReviewsDescription>
+            </ReviewsCard>
+            <ReviewsCard>
+              <Image src={quote} alt="quote up" />
+              <ReviewsAvatar>
+                <Image src={people4} alt="review people avatar" />
+                <ReviewsAvatarText>
+                  <p>Carla Uclary</p>
+                  <p>Model</p>
+                </ReviewsAvatarText>
+              </ReviewsAvatar>
+              <ReviewsDescription>
+                GTS Recruitment is a real pleasure to work with. They provided
+                us with not just candidates, but true leaders who contributed
+                enormously to our success. Efficiency, professionalism and
+                excellent understanding of the labor market are the key features
+                that make GTS Recruitment leading in their field.
+              </ReviewsDescription>
+            </ReviewsCard>
+            <ReviewsCard>
+              <Image src={quote} alt="quote up" />
+              <ReviewsAvatar>
+                <Image src={people3} alt="review people avatar" />
+                <ReviewsAvatarText>
+                  <p>Tom Mish</p>
+                  <p>Project Manager</p>
+                </ReviewsAvatarText>
+              </ReviewsAvatar>
+              <ReviewsDescription>
+                GTS Recruitment is not just a recruitment company, it is our
+                reliable strategic partner. They have a deep understanding of
+                our needs and their specialized recruitment method provides us
+                with the best talent in the industry. Without a doubt, GTS
+                Recruitment makes our business even stronger.
+              </ReviewsDescription>
+            </ReviewsCard>
+          </ReviewsInner>
+        </Container>
+      </ReviewsMain>
+    </Reviews>
+  );
 }

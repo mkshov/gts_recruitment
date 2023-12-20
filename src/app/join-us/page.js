@@ -1,10 +1,23 @@
 import wave from "../../images/Wave.png";
 import likeIcon from "../../images/svg/likeIcon.svg";
+import chartIcon from "../../images/svg/chartIcon.svg";
+import briefcase from "../../images/svg/briefcase.svg";
+import verifyIcon from "../../images/svg/verifyIcon.svg";
 
 import Image from "next/image";
 import { PagesBackgroundSec, PagesTextBlock } from "../what-we-do/style";
 import { Container } from "@mui/material";
-import { JoinUs, JoinUsSec1, JoinUsSec2 } from "./style";
+import {
+  JoinUs,
+  JoinUsSec1,
+  JoinUsSec2,
+  JoinUsSec2Inner1,
+  JoinUsSec2Inner2,
+  JoinUsSec2Inner2Card,
+  JoinUsSec2Inner3,
+} from "./style";
+import JoinUsAccardion from "./Accardion";
+import ContainedButton from "@/components/Buttons/ContainedButton";
 
 export default function () {
   return (
@@ -31,22 +44,43 @@ export default function () {
           </PagesTextBlock>
         </JoinUsSec1>
         <JoinUsSec2>
-          <div>
+          <JoinUsSec2Inner1>
             <p>Our numbers</p>
             <p>
               As the fastest-growing online Job board, our mission is to help
               great individuals connect with great companies.
             </p>
-          </div>
-          <div>
-            <div>
-              <Image src={likeIcon} alt="like icon" />
-              <p>20,583+</p>
+          </JoinUsSec2Inner1>
+          <JoinUsSec2Inner2>
+            <JoinUsSec2Inner2Card>
+              <Image src={briefcase} alt="briefcase icon" />
+              <p>20,583</p>
               <p>Specialists found</p>
-            </div>
-          </div>
+            </JoinUsSec2Inner2Card>
+            <JoinUsSec2Inner2Card>
+              <Image src={likeIcon} alt="like icon" />
+              <p>3,896</p>
+              <p>Successful hires</p>
+            </JoinUsSec2Inner2Card>
+            <JoinUsSec2Inner2Card>
+              <Image src={verifyIcon} alt="verify icon" />
+              <p>581</p>
+              <p>Verified companies</p>
+            </JoinUsSec2Inner2Card>
+            <JoinUsSec2Inner2Card>
+              <Image src={chartIcon} alt="chart icon" />
+              <p>100K</p>
+              <p>Monthly visits</p>
+            </JoinUsSec2Inner2Card>
+          </JoinUsSec2Inner2>
         </JoinUsSec2>
       </Container>
+      <JoinUsSec2Inner3>
+        <Container maxWidth="lg">
+          <JoinUsAccardion />
+          <ContainedButton>Contact us</ContainedButton>
+        </Container>
+      </JoinUsSec2Inner3>
     </JoinUs>
   );
 }

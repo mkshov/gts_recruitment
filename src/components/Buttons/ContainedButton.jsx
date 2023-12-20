@@ -8,6 +8,7 @@ const ContainedButton = ({
   children,
   width,
   height,
+  br,
   ml,
   styles,
   onClick,
@@ -23,7 +24,7 @@ const ContainedButton = ({
     lineHeight: "24px",
     letterSpacing: "0.08px",
     padding: "14px 50px",
-    borderRadius: "32px",
+    borderRadius: br || "32px",
     textTransform: "none",
     backgroundColor: bgColor ? `${bgColor} !important` : "#3598DB !important",
     ...styles, // Можете передать дополнительные стили извне

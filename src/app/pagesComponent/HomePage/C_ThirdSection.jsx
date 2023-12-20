@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import people1 from "../../../images/people1.png";
 import people2 from "../../../images/people2.jpeg";
-import people3 from "../../../images/people3.png";
 import people4 from "../../../images/people4.jpeg";
 import checkmark from "../../../images/svg/checkmark.svg";
 import {
@@ -66,7 +65,7 @@ export default function C_ThirdSection() {
           <ThirdSecPeopleImgBox>
             <ThirdSecPeopleImg
               alt="people human employees ceo gts"
-              src={people3}
+              src={people4}
             />
           </ThirdSecPeopleImgBox>
           <ThirdSecPeopleName>Jacob Jones</ThirdSecPeopleName>
