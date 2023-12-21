@@ -6,6 +6,7 @@ import Header from "@/components/Header/Header";
 import AOSWrapper from "@/utils/aosInit";
 import Footer from "@/components/Footer/Footer";
 import GTSSpeedDial from "@/components/SpeedDial";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 

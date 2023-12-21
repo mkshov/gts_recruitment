@@ -10,3 +10,7 @@ body {
 .link_active {
   color: #0f6dba;
 }
+
+html {
+  scroll-behavior: smooth;
+}
