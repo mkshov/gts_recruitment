@@ -1,7 +1,7 @@
 "use client";
 import styled from "@emotion/styled";
-import letterG1 from "../../../images/svg/letterG1.svg";
-import letterG2 from "../../../images/svg/letterG2.svg";
+import letterG1 from "@/images/svg/letterG1.svg";
+import letterG2 from "@/images/svg/letterG2.svg";
 
 export const AboutMain = styled("div")(({}) => ({}));
 export const AboutSec1 = styled("div")(({}) => ({

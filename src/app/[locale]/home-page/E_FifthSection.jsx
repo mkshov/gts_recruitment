@@ -1,7 +1,7 @@
 import React from "react";
-import star from "../../../images/svg/starIcon.svg";
-import supportIcon from "../../../images/svg/supportIcon.svg";
-import coinIcon from "../../../images/svg/coinIcon.svg";
+import star from "@/images/svg/starIcon.svg";
+import supportIcon from "@/images/svg/supportIcon.svg";
+import coinIcon from "@/images/svg/coinIcon.svg";
 import Image from "next/image";
 import {
   FifthSec,

@@ -1,10 +1,14 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
+import Header from "./Header";
+import { useLocale } from "next-intl";
 
 export default function useHeaderFunctions() {
   const router = useRouter();
   const url = usePathname();
+  console.log("url: ", url);
+  const locale = useLocale();
 
   const [isHidden, setIsHidden] = useState(false);
   const [isBack, setIsBack] = useState(false);
@@ -18,7 +22,7 @@ export default function useHeaderFunctions() {
   }, []);
 
   useEffect(() => {
-    if (window.location.pathname === "/") {
+    if (window.location.pathname === "/en") {
       window.addEventListener("scroll", handleScroll);
       setIsBack(false);
       return () => {
@@ -30,13 +34,15 @@ export default function useHeaderFunctions() {
   }, [url]);
 
   const handleNavigate = (path) => (e) => {
-    router.push(path);
+    router.push(`/${locale}/${path}`);
   };
 
-  return {
-    isHidden,
-    isBack,
-    url,
-    handleNavigate,
-  };
+  return (
+    <Header
+      isHidden={isHidden}
+      isBack={isBack}
+      url={url}
+      handleNavigate={handleNavigate}
+    />
+  );
 }

@@ -1,6 +1,6 @@
 {
   "links": {
-    "WhoWeAre": "Chi Siamo",
+    "WhoWeAre": "Wer wir sind",
     "WhatWeDo": "What we do",
     "JoinOurTribe": "Join Our Tribe",
     "ContactUs": "Contact us",
@@ -10,7 +10,7 @@
     "Send": "Send"
   },
   "homePage": {
-    "HomePageMainTitle": "Your business is our talents",
+    "HomePageMainTitle": "Ihr Geschäft ist unser Talent",
     "HomePageMainDesc": "A specialized method of personnel selection aimed at identifying and attracting top specialists for specific positions in the organization",
     "ContactUs": "Contact Us",
     "SendMessage": "Send Message",

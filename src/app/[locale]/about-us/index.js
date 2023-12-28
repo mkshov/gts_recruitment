@@ -1,11 +1,10 @@
 import React from "react";
 import { AboutMain, AboutSec1 } from "./styled";
 import Image from "next/image";
-import letterG from "../../../images/letterG.png";
 import { Container } from "@mui/material";
-import C_ThirdSection from "../HomePage/C_ThirdSection";
-import F_SixthSection from "../HomePage/F_SixthSection";
-import B_SecondSection from "../HomePage/B_SecondSection";
+import C_ThirdSection from "../home-page/C_ThirdSection";
+import F_SixthSection from "../home-page/F_SixthSection";
+import B_SecondSection from "../home-page/B_SecondSection";
 
 export default function AboutPage() {
   return (

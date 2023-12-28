@@ -3,7 +3,7 @@
 import { styled } from "@mui/material";
 import Accordion from "@mui/material/Accordion";
 
-import letterG from "../../images/svg/mainLetterG.svg";
+import letterG from "@/images/svg/mainLetterG.svg";
 
 export const WhatWeDo = styled("section")(({}) => ({
   background: "#fff",

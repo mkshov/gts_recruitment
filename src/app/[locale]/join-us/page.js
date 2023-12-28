@@ -1,8 +1,8 @@
-import wave from "../../images/Wave.png";
-import likeIcon from "../../images/svg/likeIcon.svg";
-import chartIcon from "../../images/svg/chartIcon.svg";
-import briefcase from "../../images/svg/briefcase.svg";
-import verifyIcon from "../../images/svg/verifyIcon.svg";
+import wave from "@/images/Wave.png";
+import likeIcon from "@/images/svg/likeIcon.svg";
+import chartIcon from "@/images/svg/chartIcon.svg";
+import briefcase from "@/images/svg/briefcase.svg";
+import verifyIcon from "@/images/svg/verifyIcon.svg";
 
 import Image from "next/image";
 import { Container } from "@mui/material";

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import people1 from "../../../images/people1.png";
-import people2 from "../../../images/people2.jpeg";
-import people4 from "../../../images/people4.jpeg";
-import checkmark from "../../../images/svg/checkmark.svg";
+import people1 from "@/images/people1.png";
+import people2 from "@/images/people2.jpeg";
+import people4 from "@/images/people4.jpeg";
+import checkmark from "@/images/svg/checkmark.svg";
 import {
   ThirdSec,
   ThirdSecPeople,

@@ -1,5 +1,5 @@
 import React from "react";
-import AboutPage from "../pagesComponent/AboutPage";
+import AboutPage from ".";
 
 export default function page() {
   return (

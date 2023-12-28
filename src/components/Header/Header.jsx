@@ -10,12 +10,9 @@ import {
   HeaderLink,
   HeaderNav,
 } from "./styled";
-import logo from "../../images/svg/logo.svg";
-import useHeaderFunctions from "./HeaderFunctions";
+import logo from "@/images/svg/logo.svg";
 
-export default function Header() {
-  const { isHidden, isBack, url, handleNavigate } = useHeaderFunctions();
-
+export default function Header({ isHidden, isBack, url, handleNavigate }) {
   return (
     <HeaderBack isHidden={isHidden} isBack={isBack}>
       <Container maxWidth="lg">

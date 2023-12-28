@@ -1,8 +1,8 @@
 import React from "react";
 
-import phoneIcon from "../../../images/svg/phone.svg";
-import emailIcon from "../../../images/svg/email.svg";
-import locationIcon from "../../../images/svg/location.svg";
+import phoneIcon from "@/images/svg/phone.svg";
+import emailIcon from "@/images/svg/email.svg";
+import locationIcon from "@/images/svg/location.svg";
 import Image from "next/image";
 import {
   ConatctSectionTitle,

@@ -5,7 +5,7 @@ import { Button, Container } from "@mui/material";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import logo from "../../images/svg/logo.svg";
+import logo from "@/images/svg/logo.svg";
 import ContainedButton from "../Buttons/ContainedButton";
 import {
   DottedLine,

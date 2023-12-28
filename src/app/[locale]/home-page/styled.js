@@ -2,10 +2,10 @@
 import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
-import image4 from "../../../images/image4.jpeg";
-import image5 from "../../../images/image5.jpeg";
-import image6 from "../../../images/image6.jpeg";
-import letterG from "../../../images/svg/letterG.svg";
+import image4 from "@/images/image4.jpeg";
+import image5 from "@/images/image5.jpeg";
+import image6 from "@/images/image6.jpeg";
+import letterG from "@/images/svg/letterG.svg";
 
 export const FirstSec = styled("section")(({}) => ({
   marginTop: "130px",

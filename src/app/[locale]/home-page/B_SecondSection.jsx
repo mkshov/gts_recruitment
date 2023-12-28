@@ -1,8 +1,8 @@
 import Image from "next/image";
-import logo from "../../../images/svg/logoWhite.svg";
-import image1 from "../../../images/image1.png";
-import image2 from "../../../images/image2.jpeg";
-import image3 from "../../../images/image3.png";
+import logo from "@/images/svg/logoWhite.svg";
+import image1 from "@/images/image1.png";
+import image2 from "@/images/image2.jpeg";
+import image3 from "@/images/image3.png";
 import {
   SecSectionInner1FirstTitle,
   SecSection,

@@ -1,10 +1,10 @@
 import Image from "next/image";
-import people1 from "../../images/svg/people1.svg";
-import people2 from "../../images/svg/people2.svg";
-import people3 from "../../images/people3.png";
-import people4 from "../../images/svg/people4.svg";
-import quote from "../../images/svg/quote.svg";
-import wave from "../../images/Wave.png";
+import people1 from "@/images/svg/people1.svg";
+import people2 from "@/images/svg/people2.svg";
+import people3 from "@/images/people3.png";
+import people4 from "@/images/svg/people4.svg";
+import quote from "@/images/svg/quote.svg";
+import wave from "@/images/Wave.png";
 import { Container } from "@mui/material";
 import { PagesBackgroundSec } from "../what-we-do/style";
 import {

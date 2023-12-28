@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import wave from "../../images/Wave.png";
-import phone from "../../images/svg/phoneIcon.svg";
-import email from "../../images/svg/emailIcon.svg";
+import wave from "@/images/Wave.png";
+import phone from "@/images/svg/phoneIcon.svg";
+import email from "@/images/svg/emailIcon.svg";
 import { PagesBackgroundSec } from "../what-we-do/style";
 
 import { Container } from "@mui/material";
@@ -17,7 +17,7 @@ import {
   ContactUsInner2Card,
   ContactUsMain,
 } from "./styles";
-import { ContactSectionFormInner } from "../pagesComponent/HomePage/styled";
+import { ContactSectionFormInner } from "../home-page/styled";
 
 export default function page() {
   return (

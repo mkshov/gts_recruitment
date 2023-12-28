@@ -1,5 +1,5 @@
 import Image from "next/image";
-import wave from "../../images/Wave.png";
+import wave from "@/images/Wave.png";
 import {
   PagesBackgroundSec,
   PagesTextBlock,
