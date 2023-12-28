@@ -1,5 +1,4 @@
 import React from "react";
-import A_FirstSection from "./A_FirstSection";
 import B_SecondSection from "./B_SecondSection";
 import E_FifthSection from "./E_FifthSection";
 import C_ThirdSection from "./C_ThirdSection";
@@ -7,6 +6,7 @@ import D_FourthSection from "./D_FourthSecton";
 import { Container } from "@mui/material";
 import F_SixthSection from "./F_SixthSection";
 import G_ContactForm from "./G_ContactForm";
+import A_FirstSection from "./A_FirstSection";
 
 export default function HomePage() {
   return (

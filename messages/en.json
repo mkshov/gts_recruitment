@@ -1,0 +1,41 @@
+{
+  "links": {
+    "WhoWeAre": "Who we are",
+    "WhatWeDo": "What we do",
+    "JoinOurTribe": "Join Our Tribe",
+    "ContactUs": "Contact us",
+    "Reviews": "Reviews",
+    "Newsletter": "Newsletter",
+    "YourEmailHere": "Your email here",
+    "Send": "Send"
+  },
+  "homePage": {
+    "HomePageMainTitle": "Your business is our talents",
+    "HomePageMainDesc": "A specialized method of personnel selection aimed at identifying and attracting top specialists for specific positions in the organization",
+    "ContactUs": "Contact Us",
+    "SendMessage": "Send Message",
+    "TrustedBy": "Trusted by:",
+    "SpecialistsFound": "Specialists found",
+    "AboutCompanyTitle": "About GTS Recruitment",
+    "AboutCompanyDesc": "- is a leading business recruitment company. We offer highly qualified specialists to meet unique business needs. A specialized method of personnel selection aimed at identifying and attracting top specialists for specific positions in the organization. We use advanced technologies, databases, and in-depth interviews to ensure the candidate’s professionalism.",
+    "HomePageBigCardText": "For Dear Clients",
+    "HomePageBigCardTitle": "Why businesses turn to GTS",
+    "HomePageBigCardInfo1": "Proof of quality",
+    "HomePageBigCardInfo1Desc": "Check any pro’s work samples, client reviews, and identity verification.",
+    "HomePageBigCardInfo2": "Safe and secure",
+    "HomePageBigCardInfo2Desc": "Focus on your work knowing we help protect your data and privacy. We’re here with 24/7 support if you need it.",
+    "HomePageBigCardInfo3": "No cost until you hire",
+    "HomePageBigCardInfo3Desc": "Interview potential fits for your job, negotiate rates, and only pay for work you approve.",
+    "HomePageLowHeightBlockTitle": "Find your next great opportunity!",
+    "HomePageLowHeightBlockDesc": "We are taking action to help our customers, our clients, and the people of the world — and so can you.",
+    "HomePageServicesBlockTitle": "Services & Case Studies",
+    "HomePageServicesBlockDesc": "- is a leading business recruitment company. We offer highly qualified specialists to meet unique business needs.",
+    "HomePageContactFormTitle": "Support",
+    "HomePageContactFormDesc": "Fill up the form and our team will get back to you with in 24 hours.",
+    "HomePageContactFormName": "Name",
+    "HomePageContactFormEmail": "Email",
+    "HomePageContactFormPhone": "Phone",
+    "HomePageContactFormHelp": "How can we help?",
+    "HomePageContactFormHelpPlaceHolder": "Type here..."
+  }
+}

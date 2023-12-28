@@ -5,7 +5,6 @@ import wave from "../../images/Wave.png";
 import phone from "../../images/svg/phoneIcon.svg";
 import email from "../../images/svg/emailIcon.svg";
 import { PagesBackgroundSec } from "../what-we-do/style";
-import { ContactSectionFormInner } from "../pagesComponent/HomePage/styled";
 
 import { Container } from "@mui/material";
 import ContainedButton from "@/components/Buttons/ContainedButton";
@@ -18,6 +17,7 @@ import {
   ContactUsInner2Card,
   ContactUsMain,
 } from "./styles";
+import { ContactSectionFormInner } from "../pagesComponent/HomePage/styled";
 
 export default function page() {
   return (
@@ -93,7 +93,6 @@ export default function page() {
           </ContactUsInner2>
         </ContactUsMain>
       </Container>
-      <Image alt="picture of a wave backdrop background" src={wave} />
     </ContactUs>
   );
 }

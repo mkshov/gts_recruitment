@@ -17,7 +17,10 @@ export default function SimpleBackdrop() {
   return (
     <Box sx={{ height: "100vh" }}>
       <Backdrop
-        sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        sx={{
+          color: "#fff",
+          zIndex: (theme) => theme.zIndex.drawer + 1,
+        }}
         open={open}
       >
         <CircularProgress color="inherit" />

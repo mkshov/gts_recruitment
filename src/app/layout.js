@@ -6,7 +6,6 @@ import Header from "@/components/Header/Header";
 import AOSWrapper from "@/utils/aosInit";
 import Footer from "@/components/Footer/Footer";
 import GTSSpeedDial from "@/components/SpeedDial";
-import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <html lang="en">
+      <html>
         <head>
           <meta name="title" content="GTS Recruitment" />
         </head>

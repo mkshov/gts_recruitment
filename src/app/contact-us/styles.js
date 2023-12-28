@@ -37,6 +37,8 @@ export const ContactUsInner2 = styled("div")(({}) => ({
   display: "flex",
   gap: "70px",
   justifyContent: "center",
+  marginTop: "-100px",
+  paddingBottom: "100px",
 }));
 export const ContactUsInner2Card = styled("div")(({}) => ({
   textAlign: "center",

@@ -15,6 +15,7 @@ import useHeaderFunctions from "./HeaderFunctions";
 
 export default function Header() {
   const { isHidden, isBack, url, handleNavigate } = useHeaderFunctions();
+
   return (
     <HeaderBack isHidden={isHidden} isBack={isBack}>
       <Container maxWidth="lg">

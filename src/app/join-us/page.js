@@ -5,7 +5,6 @@ import briefcase from "../../images/svg/briefcase.svg";
 import verifyIcon from "../../images/svg/verifyIcon.svg";
 
 import Image from "next/image";
-import { PagesBackgroundSec, PagesTextBlock } from "../what-we-do/style";
 import { Container } from "@mui/material";
 import {
   JoinUs,
@@ -17,6 +16,7 @@ import {
   JoinUsSec2Inner3,
 } from "./style";
 import JoinUsAccardion from "./Accardion";
+import { PagesBackgroundSec, PagesTextBlock } from "../what-we-do/style";
 import ContainedButton from "@/components/Buttons/ContainedButton";
 
 export default function () {

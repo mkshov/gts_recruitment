@@ -29,7 +29,7 @@ export default function GTSSpeedDial() {
     // <Box sx={{ height: 320, transform: "translateZ(0px)", flexGrow: 1 }}>
     <MySpeedDial
       ariaLabel="SpeedDial basic example"
-      sx={{ position: "fixed", bottom: 25, right: 25 }}
+      sx={{ position: "fixed", bottom: 80, right: 30 }}
       icon={<WhatsAppIcon fontSize="large" />}
     >
       {actions.map((action) => (
