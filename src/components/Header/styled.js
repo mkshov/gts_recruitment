@@ -5,9 +5,11 @@ import { Box, Typography } from "@mui/material";
 export const HeaderBack = styled("div")(({ isHidden, isBack }) => ({
   background: isBack ? "#fff" : isHidden ? "#fff" : "transparent",
   transition: "0.4s",
-  position: "sticky",
   top: "0",
+  left: "0",
+  right: "0",
   zIndex: "100",
+  position: "fixed",
 }));
 export const GTSHeader = styled("header")(({}) => ({
   display: "flex",
@@ -15,8 +17,6 @@ export const GTSHeader = styled("header")(({}) => ({
   gap: "40px",
   padding: "15px 15px 15px 0",
   borderBottomRightRadius: "20px",
-
-  // background: "red",
 }));
 export const HeaderImageBox = styled("div")(({}) => ({
   // marginLeft: "25px",
@@ -32,8 +32,9 @@ export const HeaderNav = styled("nav")(({}) => ({
   gap: "40px",
 }));
 
-export const HeaderLink = styled("a")(({ theme, c, w }) => ({
-  color: c || "#071B2C",
+export const HeaderLink = styled("p")(({ theme, c, w, isHidden, isBack }) => ({
+  // color: c || "#071B2C",
+  color: isBack ? "#9aa1a8" : isHidden ? "#071B2C" : "white",
   fontSize: "16px",
   fontStyle: "normal",
   fontWeight: w || "500",
