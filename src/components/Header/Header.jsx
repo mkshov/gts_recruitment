@@ -3,14 +3,19 @@ import Image from "next/image";
 import { Box, Container } from "@mui/material";
 
 import {
+  BurgerMenu,
   GTSHeader,
   HeaderBack,
   HeaderImageBox,
   HeaderLink,
   HeaderNav,
 } from "./styled";
+
 import logo from "@/images/svg/logo.svg";
+import logoWhite from "@/images/svg/logoWhite.svg";
+
 import Link from "next/link";
+import HeaderMenu from "./Sidebar";
 
 export default function Header({ isHidden, isBack, url, handleNavigate }) {
   return (
@@ -19,9 +24,14 @@ export default function Header({ isHidden, isBack, url, handleNavigate }) {
         <GTSHeader>
           <Link href="/">
             <HeaderImageBox>
-              <Image src={logo} alt="GTS Logo logo recruitment" />
+              {isHidden ? (
+                <Image src={logo} alt="GTS Logo logo recruitment" />
+              ) : (
+                <Image src={logoWhite} alt="GTS Logo logo recruitment" />
+              )}
             </HeaderImageBox>
           </Link>
+          <HeaderMenu isHidden={isHidden} />
           <HeaderNav>
             <Link href="/about-us">
               <HeaderLink

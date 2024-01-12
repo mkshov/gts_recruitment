@@ -141,6 +141,10 @@ export const SecSection = styled("section")(({}) => ({
   gap: "32px",
   marginTop: "150px",
   justifyContent: "center",
+  "@media all and (max-width: 1141px)": {
+    flexDirection: "column",
+    alignItems: "center",
+  },
 }));
 export const SecSectionInner1 = styled("div")(({}) => ({
   borderRadius: "24px",
@@ -148,6 +152,9 @@ export const SecSectionInner1 = styled("div")(({}) => ({
   maxWidth: "500px",
   padding: "40px",
   position: "relative",
+  "@media all and (max-width: 1141px)": {
+    maxWidth: "800px",
+  },
 }));
 
 export const SecSectionInner1FirstTitle = styled("p")(({}) => ({
@@ -205,7 +212,7 @@ export const SecSectionCardImage = styled(Image)(({}) => ({
 export const SecSectionBigCard = styled("div")(({ theme, bgrnd }) => ({
   borderRadius: "16px",
   width: "308px",
-  height: "100%",
+  height: "560px",
   background: bgrnd
     ? `linear-gradient(0deg, rgba(38, 56, 84, 0.56) 0%, rgba(38, 56, 84, 0.56) 100%), url(${image4.src}), lightgray 50% / cover no-repeat`
     : "none",
@@ -383,9 +390,15 @@ export const ContactSection = styled("section")(({}) => ({
   display: "flex",
   justifyContent: "space-between",
   marginBottom: "65px",
+  "@media all and (max-width: 850px)": {
+    flexDirection: "column-reverse",
+    alignItems: "center",
+  },
 }));
 export const ContactSectionInner = styled("div")(({}) => ({
-  maxWidth: "420px",
+  "@media all and (min-width: 850px)": {
+    maxWidth: "420px",
+  },
   maxHeight: "410px",
   display: "flex",
   flexDirection: "column",
@@ -394,6 +407,10 @@ export const ContactSectionInner = styled("div")(({}) => ({
   border: "1px solid #E9EBED",
   background: "#fff",
   padding: "32px",
+  "@media all and (max-width: 850px)": {
+    width: "100%",
+    textAlign: "center",
+  },
 }));
 export const ContactSectionTextGroup = styled("div")(({}) => ({}));
 export const ConatctSectionTitle = styled("p")(({}) => ({
@@ -445,6 +462,13 @@ export const ContactSectionForm = styled("form")(({}) => ({
     alignSelf: "end",
     marginTop: "48px",
   },
+  "@media all and (max-width: 850px)": {
+    marginLeft: "0",
+    button: {
+      alignSelf: "center",
+      marginBottom: "80px",
+    },
+  },
 }));
 
 export const ContactSectionFormInner = styled("div")(({ theme, height }) => ({
@@ -491,3 +515,74 @@ export const ContactSectionFormInner = styled("div")(({ theme, height }) => ({
   },
 }));
 export const ContactSectionFormArea = styled("div")(({}) => ({}));
+
+// fourth section
+
+export const FourthSection = styled("section")(({}) => ({
+  display: "flex",
+  gap: "32px",
+  marginTop: "150px",
+  justifyContent: "center",
+}));
+
+export const FourthSectionInner1 = styled("div")(({}) => ({
+  borderRadius: "24px",
+  background: "#3598DB",
+  maxWidth: "500px",
+  padding: "40px",
+  position: "relative",
+}));
+
+export const FourthSectionInner2 = styled("div")(({}) => ({
+  display: "flex",
+  gap: "12px",
+}));
+
+export const FourthSectionCards = styled("div")(({}) => ({
+  display: "flex",
+  flexDirection: "column",
+  gap: "12px",
+}));
+
+export const FourthSectionCard = styled("div")(
+  ({ theme, height, bgrnd, idx }) => {
+    let images = [image5, image6];
+
+    return {
+      borderRadius: "16px",
+      width: "308px",
+      height: height ? height : "202px",
+      background: bgrnd
+        ? ` linear-gradient(0deg, rgba(38, 56, 84, 0.56) 0%, rgba(38, 56, 84, 0.56) 100%), url(${images[idx].src}), lightgray 50% / cover no-repeat`
+        : "none",
+      backgroundPosition: "center",
+    };
+  }
+);
+
+export const FourthSectionCardImage = styled(Image)(({}) => ({
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+  borderRadius: "16px",
+}));
+
+export const FourthSectionBigCard = styled("div")(({ theme, bgrnd }) => ({
+  borderRadius: "16px",
+  width: "308px",
+  height: "100%",
+  background: bgrnd
+    ? `linear-gradient(0deg, rgba(38, 56, 84, 0.56) 0%, rgba(38, 56, 84, 0.56) 100%), url(${image4.src}), lightgray 50% / cover no-repeat`
+    : "none",
+  backgroundPosition: "center",
+  backgroundSize: "245%",
+  "@media all and (max-width: 1040px)": {
+    display: "none",
+  },
+}));
+export const FourthSectionBigCardImg = styled(Image)(({}) => ({
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+  borderRadius: "16px",
+}));

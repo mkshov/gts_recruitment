@@ -17,6 +17,9 @@ export const GTSHeader = styled("header")(({}) => ({
   gap: "40px",
   padding: "15px 15px 15px 0",
   borderBottomRightRadius: "20px",
+  "@media all and (max-width: 700px)": {
+    justifyContent: "space-between",
+  },
 }));
 export const HeaderImageBox = styled("div")(({}) => ({
   // marginLeft: "25px",
@@ -30,6 +33,9 @@ export const HeaderImageBox = styled("div")(({}) => ({
 export const HeaderNav = styled("nav")(({}) => ({
   display: "flex",
   gap: "40px",
+  "@media all and (max-width: 700px)": {
+    display: "none",
+  },
 }));
 
 export const HeaderLink = styled("p")(({ theme, c, w, isHidden, isBack }) => ({

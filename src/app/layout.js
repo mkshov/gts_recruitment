@@ -6,6 +6,7 @@ import Header from "@/components/Header/HeaderFunctions";
 import AOSWrapper from "@/utils/aosInit";
 import Footer from "@/components/Footer/Footer";
 import GTSSpeedDial from "@/components/SpeedDial";
+import { ToastContainer } from "react-toastify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children, params }) {
             {children}
             <Footer />
             <GTSSpeedDial />
+            <ToastContainer />
           </body>
         </AOSWrapper>
       </html>

@@ -1,7 +1,10 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 
 import phoneIcon from "@/images/svg/phone.svg";
 import emailIcon from "@/images/svg/email.svg";
+import "react-toastify/dist/ReactToastify.css";
+
 import locationIcon from "@/images/svg/location.svg";
 import Image from "next/image";
 import {
@@ -17,8 +20,23 @@ import {
   ContactSectionTextGroup,
 } from "./style";
 import ContainedButton from "@/components/Buttons/ContainedButton";
+import { ToastContainer, toast } from "react-toastify";
 
 export default function G_ContactForm() {
+  const successAlert = () => {
+    console.log("worl");
+    toast.success("Data Successfully Sent!", {
+      position: "bottom-left",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  };
+
   return (
     <ContactSection>
       <ContactSectionInner>
@@ -60,7 +78,7 @@ export default function G_ContactForm() {
           <p>How can we help?</p>
           <textarea type="text" placeholder="Type here..." />
         </ContactSectionFormInner>
-        <ContainedButton>Send Message</ContainedButton>
+        <ContainedButton onClick={successAlert}>Send Message</ContainedButton>
       </ContactSectionForm>
     </ContactSection>
   );
