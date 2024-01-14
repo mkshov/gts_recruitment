@@ -9,6 +9,7 @@ export default function useHeaderFunctions() {
 
   const [isHidden, setIsHidden] = useState(false);
   const [isBack, setIsBack] = useState(false);
+  const [sidebar, setSidebar] = useState(true);
 
   const handleScroll = useCallback(() => {
     if (window.scrollY > 150) {
@@ -18,15 +19,26 @@ export default function useHeaderFunctions() {
     }
   }, []);
 
+  function toggleSidebar() {
+    setSidebar((prev) => !prev);
+  }
+  function closeSidebar() {
+    setSidebar(true);
+  }
+  function openSidebar() {
+    setSidebar(false);
+  }
+
   useEffect(() => {
     if (window.location.pathname === "/") {
-      window.addEventListener("scroll", handleScroll);
       setIsBack(false);
+      window.addEventListener("scroll", handleScroll);
       return () => {
         window.removeEventListener("scroll", handleScroll);
       };
     } else {
       setIsBack(true);
+      setIsHidden(true);
     }
   }, [url]);
 
@@ -40,6 +52,10 @@ export default function useHeaderFunctions() {
       isBack={isBack}
       url={url}
       handleNavigate={handleNavigate}
+      closeSidebar={closeSidebar}
+      openSidebar={openSidebar}
+      toggleSidebar={toggleSidebar}
+      sidebar={sidebar}
     />
   );
 }

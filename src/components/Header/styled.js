@@ -19,12 +19,22 @@ export const GTSHeader = styled("header")(({}) => ({
   borderBottomRightRadius: "20px",
   "@media all and (max-width: 700px)": {
     justifyContent: "space-between",
+    ".sidebar": {
+      display: "inline-block",
+    },
+  },
+  "@media all and (min-width: 700px)": {
+    ".sidebar": {
+      display: "none",
+    },
   },
 }));
 export const HeaderImageBox = styled("div")(({}) => ({
   // marginLeft: "25px",
   cursor: "pointer",
   transition: ".3s",
+  zIndex: "5",
+  position: "relative",
   "&:hover": {
     transform: "scale(1.1)",
   },
@@ -40,7 +50,7 @@ export const HeaderNav = styled("nav")(({}) => ({
 
 export const HeaderLink = styled("p")(({ theme, c, w, isHidden, isBack }) => ({
   // color: c || "#071B2C",
-  color: isBack ? "#9aa1a8" : isHidden ? "#071B2C" : "white",
+  color: isBack ? "#071B2C" : isHidden ? "#071B2C" : "white",
   fontSize: "16px",
   fontStyle: "normal",
   fontWeight: w || "500",
@@ -49,6 +59,20 @@ export const HeaderLink = styled("p")(({ theme, c, w, isHidden, isBack }) => ({
   fontFamily: "'DM Sans', sans-serif",
   cursor: "pointer",
   transition: ".2s",
+  "&:hover": {
+    color: "#0F6DBA",
+  },
+}));
+
+export const HeaderLinkSidebar = styled("p")(({}) => ({
+  color: "white",
+  fontSize: "24px",
+  fontStyle: "normal",
+  fontWeight: "500",
+  lineHeight: "36px",
+  letterSpacing: "0.12px",
+  fontFamily: "'DM Sans', sans-serif",
+  cursor: "pointer",
   "&:hover": {
     color: "#0F6DBA",
   },

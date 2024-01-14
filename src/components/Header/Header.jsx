@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Box, Container } from "@mui/material";
+import { Slant as Hamburger } from "hamburger-react";
 
 import {
   BurgerMenu,
@@ -16,22 +17,42 @@ import logoWhite from "@/images/svg/logoWhite.svg";
 
 import Link from "next/link";
 import HeaderMenu from "./Sidebar";
+import Sidebar2 from "./Sidebar2";
 
-export default function Header({ isHidden, isBack, url, handleNavigate }) {
+export default function Header({
+  isHidden,
+  isBack,
+  url,
+  handleNavigate,
+  toggleSidebar,
+  sidebar,
+  closeSidebar,
+}) {
   return (
     <HeaderBack isHidden={isHidden} isBack={isBack}>
       <Container maxWidth="lg">
         <GTSHeader>
-          <Link href="/">
+          <Link onClick={closeSidebar} href="/">
             <HeaderImageBox>
-              {isHidden ? (
-                <Image src={logo} alt="GTS Logo logo recruitment" />
+              {sidebar ? (
+                isHidden ? (
+                  <Image src={logo} alt="GTS Logo logo recruitment" />
+                ) : (
+                  <Image src={logoWhite} alt="GTS Logo logo recruitment" />
+                )
               ) : (
                 <Image src={logoWhite} alt="GTS Logo logo recruitment" />
               )}
             </HeaderImageBox>
           </Link>
-          <HeaderMenu isHidden={isHidden} />
+          {/* <HeaderMenu isHidden={isHidden} /> */}
+          <Sidebar2 closeSidebar={closeSidebar} sidebar={sidebar} />
+          <Box className="sidebar" onClick={toggleSidebar}>
+            <Hamburger
+              toggled={!sidebar}
+              color={sidebar ? (isHidden ? "#3598DB" : "white") : "white"}
+            />
+          </Box>
           <HeaderNav>
             <Link href="/about-us">
               <HeaderLink

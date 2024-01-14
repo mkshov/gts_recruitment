@@ -58,7 +58,7 @@ export const PagesTextBlock = styled("div")(({}) => ({
   background: "#fff",
   position: "absolute",
   zIndex: "2",
-  top: "440px",
+  top: "340px",
 
   "& > p:first-of-type": {
     fontSize: "23px",

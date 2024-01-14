@@ -20,6 +20,11 @@ export const FtrInrBlock1 = styled("div")(({}) => ({
   img: {
     width: "61px",
   },
+  "@media all and (max-width: 930px)": {
+    flexDirection: "column",
+    alignItems: "center",
+    gap: "50px",
+  },
 }));
 
 export const FooterNav = styled("nav")(({}) => ({
@@ -38,6 +43,9 @@ export const FooterNav = styled("nav")(({}) => ({
     fontWeight: 500,
     lineHeight: "24px",
     letterSpacing: "0.08px",
+  },
+  "@media all and (max-width: 930px)": {
+    maxWidth: "630px",
   },
 }));
 
