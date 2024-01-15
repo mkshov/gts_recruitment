@@ -18,6 +18,7 @@ export const FirstSec = styled("section")(({}) => ({
   flexDirection: "column",
   justifyContent: "center",
   paddingTop: "140px",
+  paddingBottom: "110px",
 }));
 
 export const FirstSecInner1 = styled("div")(({}) => ({
@@ -90,7 +91,7 @@ export const TrustedTitle = styled("p")(({}) => ({
   letterSpacing: "0.09px",
   fontFamily: "'DM Sans', sans-serif",
 }));
-export const TrustedInner = styled("p")(({}) => ({
+export const TrustedInner = styled("div")(({}) => ({
   display: "flex",
   gap: "24px",
 }));
@@ -333,6 +334,9 @@ export const FifthSecInner = styled("div")(({}) => ({
   width: "100%",
   color: "#fff",
   padding: "100px",
+  "@media all and (max-width: 650px)": {
+    padding: "80px 16px",
+  },
 }));
 export const FifthSecBlock1 = styled("div")(({}) => ({
   "& > p:first-of-type": {
@@ -345,6 +349,10 @@ export const FifthSecBlock1 = styled("div")(({}) => ({
     lineHeight: "56px",
     fontFamily: "DM Sans",
     margin: "16px 0 48px 0",
+    "@media all and (max-width: 650px)": {
+      fontSize: "38px",
+      lineHeight: "53px",
+    },
   },
 }));
 
@@ -407,6 +415,10 @@ export const SixthTitle = styled("p")(({}) => ({
   lineHeight: "56px",
   fontFamily: "DM Sans, sans-serif",
   marginBottom: "16px",
+  "@media all and (max-width: 650px)": {
+    fontSize: "38px",
+    lineHeight: "53px",
+  },
 }));
 
 export const SixthDescription = styled("p")(({}) => ({

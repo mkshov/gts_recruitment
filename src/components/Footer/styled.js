@@ -61,6 +61,10 @@ export const FtrParentForm = styled("div")(({}) => ({
     lineHeight: "24px",
     letterSpacing: "1px",
   },
+  "@media all and (max-width: 560px)": {
+    marginTop: "100px",
+    alignItems: "center",
+  },
 }));
 export const FooterForm = styled("form")(({}) => ({
   background: "#021638",
@@ -76,6 +80,9 @@ export const FooterForm = styled("form")(({}) => ({
     "&:focus": {
       border: "2px solid #3598dbab",
     },
+  },
+  "@media all and (max-width: 560px)": {
+    flexDirection: "column",
   },
 }));
 
@@ -110,6 +117,10 @@ export const FtrInrBlock2 = styled("div")(({}) => ({
   display: "flex",
   alignItems: "flex-start",
   justifyContent: "space-between",
+  "@media all and (max-width: 560px)": {
+    flexDirection: "column-reverse",
+    gap: "30px",
+  },
 }));
 
 export const FtrSocials = styled("div")(({}) => ({

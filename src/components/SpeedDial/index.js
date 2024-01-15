@@ -22,6 +22,10 @@ export const MySpeedDial = styled(SpeedDial)(({}) => ({
   button: {
     background: "#3598DB",
   },
+  "@media all and (max-width: 520px)": {
+    bottom: "20px",
+    right: "20px",
+  },
 }));
 
 export default function GTSSpeedDial() {

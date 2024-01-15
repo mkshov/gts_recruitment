@@ -37,7 +37,7 @@ export default function A_FirstSection() {
         </Description>
         <ContainedButton>Contacts Us</ContainedButton>
       </FirstSecInner1>
-      <Container maxWidth="lg">
+      {/* <Container maxWidth="lg">
         <Trusted>
           <TrustedTitle>Trusted by:</TrustedTitle>
           <TrustedInner>
@@ -46,7 +46,7 @@ export default function A_FirstSection() {
             <Image alt="airbnb logo svg" src={airbnbLogo} />
           </TrustedInner>
         </Trusted>
-      </Container>
+      </Container> */}
     </FirstSec>
   );
 }

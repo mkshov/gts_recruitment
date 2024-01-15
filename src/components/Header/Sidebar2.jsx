@@ -7,7 +7,9 @@ export default function Sidebar2({ sidebar, closeSidebar }) {
     <Box
       sx={{
         width: "100%",
-        height: "200vh",
+        maxHeight: "100vh",
+        minHeight: "100vh",
+        overflowY: "auto",
         position: "fixed",
         left: "0",
         background: "#000623",

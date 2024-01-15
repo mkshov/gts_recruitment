@@ -4,7 +4,6 @@ import { Box, Container } from "@mui/material";
 import { Slant as Hamburger } from "hamburger-react";
 
 import {
-  BurgerMenu,
   GTSHeader,
   HeaderBack,
   HeaderImageBox,
@@ -16,7 +15,6 @@ import logo from "@/images/svg/logo.svg";
 import logoWhite from "@/images/svg/logoWhite.svg";
 
 import Link from "next/link";
-import HeaderMenu from "./Sidebar";
 import Sidebar2 from "./Sidebar2";
 
 export default function Header({
@@ -45,7 +43,6 @@ export default function Header({
               )}
             </HeaderImageBox>
           </Link>
-          {/* <HeaderMenu isHidden={isHidden} /> */}
           <Sidebar2 closeSidebar={closeSidebar} sidebar={sidebar} />
           <Box className="sidebar" onClick={toggleSidebar}>
             <Hamburger
