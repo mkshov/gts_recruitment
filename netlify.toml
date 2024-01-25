@@ -1,9 +1,0 @@
-# netlify.toml
-
-[build]
-
-[build.cache]
-  paths = [
-    "./node_modules",
-    "./.next/cache"
-  ]
