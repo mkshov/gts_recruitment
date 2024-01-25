@@ -10,6 +10,7 @@ export default function useHeaderFunctions() {
   const [isHidden, setIsHidden] = useState(false);
   const [isBack, setIsBack] = useState(false);
   const [sidebar, setSidebar] = useState(true);
+  const [windowWidth, setWindowWidth] = useState(undefined);
 
   const handleScroll = useCallback(() => {
     if (window.scrollY > 150) {
@@ -32,6 +33,8 @@ export default function useHeaderFunctions() {
   useEffect(() => {
     if (window.location.pathname === "/") {
       setIsBack(false);
+      setIsHidden(false);
+
       window.addEventListener("scroll", handleScroll);
       return () => {
         window.removeEventListener("scroll", handleScroll);
@@ -41,6 +44,20 @@ export default function useHeaderFunctions() {
       setIsHidden(true);
     }
   }, [url]);
+
+  useEffect(() => {
+    const updateWindowWidth = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", updateWindowWidth);
+
+    updateWindowWidth();
+
+    return () => {
+      window.removeEventListener("resize", updateWindowWidth);
+    };
+  }, []);
 
   const handleNavigate = (path) => (e) => {
     router.push(`${path}`);

@@ -71,6 +71,9 @@ export const JoinUsSec2Inner2Card = styled("div")(({}) => ({
     color: "rgba(7, 27, 44, 0.72)",
     marginTop: "8px",
   },
+  "@media all and (max-width: 450px)": {
+    width: "100%",
+  },
 }));
 
 export const JoinUsSec2Inner3 = styled("div")(({}) => ({
@@ -78,4 +81,7 @@ export const JoinUsSec2Inner3 = styled("div")(({}) => ({
   padding: "70px",
   textAlign: "center",
   minHeight: "440px",
+  "@media all and (max-width: 600px)": {
+    padding: "50px 0 0 0",
+  },
 }));

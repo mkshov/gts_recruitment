@@ -4,7 +4,12 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { MyAccordion, MyAccordionSubtitle, MyAccordionTitle } from "./style";
+import {
+  MainAccordion,
+  MyAccordion,
+  MyAccordionSubtitle,
+  MyAccordionTitle,
+} from "./style";
 import { Box } from "@mui/material";
 
 export default function WhatWeDoAccordion() {
@@ -14,11 +19,7 @@ export default function WhatWeDoAccordion() {
     setExpanded(newExpanded ? panel : false);
   };
   return (
-    <Box
-      sx={{
-        marginBottom: "100px",
-      }}
-    >
+    <MainAccordion>
       <MyAccordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
@@ -28,45 +29,15 @@ export default function WhatWeDoAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <MyAccordionTitle>Executive Search</MyAccordionTitle>
+          <MyAccordionTitle>
+            Client Consultation and Needs Assessment:
+          </MyAccordionTitle>
         </AccordionSummary>
         <AccordionDetails>
           <MyAccordionSubtitle>
-            To create a custom-fit suit, we start by gathering detailed
-            measurements. Before starting any project, we thoroughly research
-            the company that has entrusted us with the task, including its
-            history, values, and long-term strategy. We provide a comprehensive
-            understanding of the organizational context, ensuring our
-            professionals are effectively onboarded. We also use a research
-            model that assesses leadership abilities of the professionals
-            involved, analyze their skills and provide our stakeholders with
-            informed and strategic decisions. This allows us to make solid
-            choices that benefit the company and provide a more comprehensive
-            and structured comparison to the reference market.
-          </MyAccordionSubtitle>
-        </AccordionDetails>
-      </MyAccordion>
-      <MyAccordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <MyAccordionTitle>Tailored Head Hunting</MyAccordionTitle>
-        </AccordionSummary>
-        <AccordionDetails>
-          <MyAccordionSubtitle>
-            To create a custom-fit suit, we start by gathering detailed
-            measurements. Before starting any project, we thoroughly research
-            the company that has entrusted us with the task, including its
-            history, values, and long-term strategy. We provide a comprehensive
-            understanding of the organizational context, ensuring our
-            professionals are effectively onboarded. We also use a research
-            model that assesses leadership abilities of the professionals
-            involved, analyze their skills and provide our stakeholders with
-            informed and strategic decisions. This allows us to make solid
-            choices that benefit the company and provide a more comprehensive
-            and structured comparison to the reference market.
+            We start by thoroughly understanding your organization's
+            requirements, company culture, and specific attributes sought in a
+            candidate through in-depth consultations.Project
           </MyAccordionSubtitle>
         </AccordionDetails>
       </MyAccordion>
@@ -77,22 +48,15 @@ export default function WhatWeDoAccordion() {
           id="panel2a-header"
         >
           <MyAccordionTitle>
-            HR Consulting Market Mapping & Scouting
+            Customization and Bespoke Approach:
           </MyAccordionTitle>
         </AccordionSummary>
         <AccordionDetails>
           <MyAccordionSubtitle>
-            To create a custom-fit suit, we start by gathering detailed
-            measurements. Before starting any project, we thoroughly research
-            the company that has entrusted us with the task, including its
-            history, values, and long-term strategy. We provide a comprehensive
-            understanding of the organizational context, ensuring our
-            professionals are effectively onboarded. We also use a research
-            model that assesses leadership abilities of the professionals
-            involved, analyze their skills and provide our stakeholders with
-            informed and strategic decisions. This allows us to make solid
-            choices that benefit the company and provide a more comprehensive
-            and structured comparison to the reference market.
+            Unlike traditional methods, we eschew databases and
+            cross-information with competitors, starting each project from
+            scratch. This allows us to tailor our approach uniquely to your
+            needs.
           </MyAccordionSubtitle>
         </AccordionDetails>
       </MyAccordion>
@@ -102,21 +66,16 @@ export default function WhatWeDoAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <MyAccordionTitle>Outsource In-House Recruitment</MyAccordionTitle>
+          <MyAccordionTitle>
+            Innovative Sourcing and Market Analysis
+          </MyAccordionTitle>
         </AccordionSummary>
         <AccordionDetails>
           <MyAccordionSubtitle>
-            To create a custom-fit suit, we start by gathering detailed
-            measurements. Before starting any project, we thoroughly research
-            the company that has entrusted us with the task, including its
-            history, values, and long-term strategy. We provide a comprehensive
-            understanding of the organizational context, ensuring our
-            professionals are effectively onboarded. We also use a research
-            model that assesses leadership abilities of the professionals
-            involved, analyze their skills and provide our stakeholders with
-            informed and strategic decisions. This allows us to make solid
-            choices that benefit the company and provide a more comprehensive
-            and structured comparison to the reference market.
+            Leveraging our industry expertise, we employ cutting-edge
+            recruitment technologies and creative sourcing strategies,
+            conducting continuous market research to stay informed and identify
+            the most suitable candidates.
           </MyAccordionSubtitle>
         </AccordionDetails>
       </MyAccordion>
@@ -126,21 +85,15 @@ export default function WhatWeDoAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <MyAccordionTitle>Sustainable Growth</MyAccordionTitle>
+          <MyAccordionTitle>
+            Rigorous Candidate Screening and Assessment:
+          </MyAccordionTitle>
         </AccordionSummary>
         <AccordionDetails>
           <MyAccordionSubtitle>
-            To create a custom-fit suit, we start by gathering detailed
-            measurements. Before starting any project, we thoroughly research
-            the company that has entrusted us with the task, including its
-            history, values, and long-term strategy. We provide a comprehensive
-            understanding of the organizational context, ensuring our
-            professionals are effectively onboarded. We also use a research
-            model that assesses leadership abilities of the professionals
-            involved, analyze their skills and provide our stakeholders with
-            informed and strategic decisions. This allows us to make solid
-            choices that benefit the company and provide a more comprehensive
-            and structured comparison to the reference market.
+            Our commitment to quality ensures a thorough screening process,
+            evaluating skills, qualifications, and cultural fit. Only candidates
+            meeting stringent standards are presented to you.
           </MyAccordionSubtitle>
         </AccordionDetails>
       </MyAccordion>
@@ -150,24 +103,37 @@ export default function WhatWeDoAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <MyAccordionTitle>Diversity & Inclusion Recruitment</MyAccordionTitle>
+          <MyAccordionTitle>
+            Client Collaboration and Feedback Loop:
+          </MyAccordionTitle>
         </AccordionSummary>
         <AccordionDetails>
           <MyAccordionSubtitle>
-            To create a custom-fit suit, we start by gathering detailed
-            measurements. Before starting any project, we thoroughly research
-            the company that has entrusted us with the task, including its
-            history, values, and long-term strategy. We provide a comprehensive
-            understanding of the organizational context, ensuring our
-            professionals are effectively onboarded. We also use a research
-            model that assesses leadership abilities of the professionals
-            involved, analyze their skills and provide our stakeholders with
-            informed and strategic decisions. This allows us to make solid
-            choices that benefit the company and provide a more comprehensive
-            and structured comparison to the reference market.
+            We value your input throughout the process, fostering collaboration
+            for adjustments and refinements based on your feedback. This ensures
+            the search aligns seamlessly with your evolving needs.
           </MyAccordionSubtitle>
         </AccordionDetails>
       </MyAccordion>
-    </Box>
+      <MyAccordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <MyAccordionTitle>
+            Final Selection, Placement, and Post-Placement Support:
+          </MyAccordionTitle>
+        </AccordionSummary>
+        <AccordionDetails>
+          <MyAccordionSubtitle>
+            Once the final selection is made, we guide you through the offer and
+            negotiation process, ensuring a successful placement. Our commitment
+            extends beyond, with post-placement follow-ups to ensure ongoing
+            satisfaction for both the client and the candidate.
+          </MyAccordionSubtitle>
+        </AccordionDetails>
+      </MyAccordion>
+    </MainAccordion>
   );
 }

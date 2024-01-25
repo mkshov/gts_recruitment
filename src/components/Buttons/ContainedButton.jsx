@@ -26,6 +26,8 @@ const ContainedButton = ({
     padding: "14px 50px",
     borderRadius: br || "32px",
     textTransform: "none",
+    width: width || null,
+    height: height || null,
     backgroundColor: bgColor ? `${bgColor} !important` : "#3598DB !important",
     ...styles, // Можете передать дополнительные стили извне
   };

@@ -1,12 +1,16 @@
+import { Suspense } from "react";
 import { Inter } from "next/font/google";
+
 import "./globals.css";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import theme from "@/utils/ThemeRegistry";
-import Header from "@/components/Header/HeaderFunctions";
+import Loading from "./loading";
 import AOSWrapper from "@/utils/aosInit";
+import theme from "@/utils/ThemeRegistry";
 import Footer from "@/components/Footer/Footer";
 import GTSSpeedDial from "@/components/SpeedDial";
+import Header from "@/components/Header/HeaderFunctions";
+
 import { ToastContainer } from "react-toastify";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,22 +22,22 @@ export const metadata = {
 
 export default function RootLayout({ children, params }) {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <html lang="en">
-        <head>
-          <meta name="title" content="GTS Recruitment" />
-        </head>
-        <AOSWrapper>
+    <AOSWrapper>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <html lang="en">
+          <head>
+            <meta name="title" content="GTS Recruitment" />
+          </head>
           <body className={inter.className}>
             <Header />
-            {children}
+            <Suspense fallback={<Loading />}>{children}</Suspense>
             <Footer />
             <GTSSpeedDial />
             <ToastContainer />
           </body>
-        </AOSWrapper>
-      </html>
-    </ThemeProvider>
+        </html>
+      </ThemeProvider>
+    </AOSWrapper>
   );
 }

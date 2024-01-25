@@ -5,7 +5,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Button from "@mui/material/Button";
 import { Box } from "@mui/material";
 
-export default function SimpleBackdrop() {
+export default function Loading() {
   const [open, setOpen] = React.useState(true);
   const handleClose = () => {
     setOpen(false);

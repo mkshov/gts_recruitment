@@ -21,6 +21,7 @@ import airbnbLogo from "@/images/svg/airbnb.svg";
 import background from "@/images/menandback.png";
 import briefcase from "@/images/svg/briefcase.svg";
 import { Container } from "@mui/material";
+import Link from "next/link";
 
 export default function A_FirstSection() {
   return (
@@ -35,7 +36,9 @@ export default function A_FirstSection() {
           A specialized method of personnel selection aimed at identifying and
           attracting top specialists for specific positions in the organization
         </Description>
-        <ContainedButton>Contacts Us</ContainedButton>
+        <Link href="contact-us">
+          <ContainedButton>Contacts Us</ContainedButton>
+        </Link>
       </FirstSecInner1>
       {/* <Container maxWidth="lg">
         <Trusted>

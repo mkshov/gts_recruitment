@@ -6,6 +6,7 @@ import people4 from "@/images/svg/people4.svg";
 import quote from "@/images/svg/quote.svg";
 import wave from "@/images/Wave.png";
 import bgrnd from "@/images/bgrnd5.png";
+import avatar from "@/images/avatar.png";
 
 import { Container } from "@mui/material";
 import { PagesBackgroundSec } from "../what-we-do/style";
@@ -104,35 +105,35 @@ export default function page() {
             <ReviewsCard>
               <Image src={quote} alt="quote up" />
               <ReviewsAvatar>
-                <Image src={people4} alt="review people avatar" />
+                <Image src={avatar} alt="review people avatar" />
                 <ReviewsAvatarText>
-                  <p>Carla Uclary</p>
-                  <p>Model</p>
+                  <p>Lucas Mitchell</p>
+                  <p>Software Developer</p>
                 </ReviewsAvatarText>
               </ReviewsAvatar>
               <ReviewsDescription>
-                GTS Recruitment is a real pleasure to work with. They provided
-                us with not just candidates, but true leaders who contributed
-                enormously to our success. Efficiency, professionalism and
-                excellent understanding of the labor market are the key features
-                that make GTS Recruitment leading in their field.
+                My interaction with GTS was fantastic. They were highly
+                professional, communicative and took a genuine interest in both
+                the candidates and the company culture. The process was smooth
+                and their commitment to individual growth and diversity was
+                evident. I highly recommend their services.
               </ReviewsDescription>
             </ReviewsCard>
             <ReviewsCard>
               <Image src={quote} alt="quote up" />
               <ReviewsAvatar>
-                <Image src={people3} alt="review people avatar" />
+                <Image src={avatar} alt="review people avatar" />
                 <ReviewsAvatarText>
-                  <p>Tom Mish</p>
-                  <p>Project Manager</p>
+                  <p>Emma Thompson</p>
+                  <p>Financial Analyst</p>
                 </ReviewsAvatarText>
               </ReviewsAvatar>
               <ReviewsDescription>
-                GTS Recruitment is not just a recruitment company, it is our
-                reliable strategic partner. They have a deep understanding of
-                our needs and their specialized recruitment method provides us
-                with the best talent in the industry. Without a doubt, GTS
-                Recruitment makes our business even stronger.
+                Throughout the recruitment process, GTS exhibited a level of
+                professionalism and efficiency that exceeded my expectations.
+                Their commitment to thoroughly understanding both the technical
+                requirements of the roles and the unique aspects of our company
+                culture was evident in the quality of candidates presented.
               </ReviewsDescription>
             </ReviewsCard>
           </ReviewsInner>

@@ -5,8 +5,8 @@ import C_ThirdSection from "./C_ThirdSection";
 import D_FourthSection from "./D_FourthSecton";
 import { Container } from "@mui/material";
 import F_SixthSection from "./F_SixthSection";
-import G_ContactForm from "./G_ContactForm";
 import A_FirstSection1 from "./A_FirstSection1";
+import ContactForm from "./actions";
 
 export default function HomePage() {
   return (
@@ -20,7 +20,7 @@ export default function HomePage() {
       <Container maxWidth="lg">
         <D_FourthSection />
         {/* <C_ThirdSection /> */}
-        <G_ContactForm />
+        <ContactForm />
       </Container>
     </>
   );

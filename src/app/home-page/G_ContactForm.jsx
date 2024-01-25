@@ -20,23 +20,23 @@ import {
   ContactSectionTextGroup,
 } from "./style";
 import ContainedButton from "@/components/Buttons/ContainedButton";
-import { ToastContainer, toast } from "react-toastify";
+import { CircularProgress } from "@mui/material";
 
-export default function G_ContactForm() {
-  const successAlert = () => {
-    console.log("worl");
-    toast.success("Data Successfully Sent!", {
-      position: "bottom-left",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-  };
-
+export default function G_ContactForm({
+  form,
+  name,
+  email,
+  phone,
+  message,
+  lastName,
+  sendEmail,
+  isLoading,
+  handleEmailChange,
+  handleNameChange,
+  handleMessageChange,
+  handlePhoneChange,
+  handleLastNameChange,
+}) {
   return (
     <ContactSection>
       <ContactSectionInner>
@@ -61,24 +61,54 @@ export default function G_ContactForm() {
           </ContactSectionInnerInfo>
         </ContactSectionInfoGroup>
       </ContactSectionInner>
-      <ContactSectionForm>
+      <ContactSectionForm ref={form} onSubmit={sendEmail}>
         <ContactSectionFormInner>
           <p>Name</p>
-          <input type="text" placeholder="Lincoln Baptista" />
+          <input
+            type="text"
+            value={name}
+            name="from_name"
+            onChange={handleNameChange}
+            placeholder="Lincoln Baptista"
+          />
         </ContactSectionFormInner>
         <ContactSectionFormInner>
           <p>Email</p>
-          <input type="email" placeholder="youremail@gmail.com" />
+          <input
+            name="user_email"
+            type="email"
+            value={email}
+            onChange={handleEmailChange}
+            placeholder="youremail@gmail.com"
+          />
         </ContactSectionFormInner>
         <ContactSectionFormInner>
           <p>Phone</p>
-          <input type="number" placeholder="+1 862732625134" />
+          <input
+            name="user_phone"
+            type="number"
+            value={phone}
+            onChange={handlePhoneChange}
+            placeholder="+1 862732625134"
+          />
         </ContactSectionFormInner>
         <ContactSectionFormInner height="132px">
           <p>How can we help?</p>
-          <textarea type="text" placeholder="Type here..." />
+          <textarea
+            name="message"
+            type="text"
+            value={message}
+            onChange={handleMessageChange}
+            placeholder="Type here..."
+          />
         </ContactSectionFormInner>
-        <ContainedButton onClick={successAlert}>Send Message</ContainedButton>
+        <ContainedButton width="213.35px" height="52px">
+          {isLoading ? (
+            <CircularProgress sx={{ color: "#fff" }} size={30} />
+          ) : (
+            "Send Message"
+          )}
+        </ContainedButton>
       </ContactSectionForm>
     </ContactSection>
   );

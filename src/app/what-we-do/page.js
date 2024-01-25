@@ -21,16 +21,13 @@ export default function page() {
       <Container maxWidth="lg">
         <WhatWeDoSec2>
           <PagesTextBlock>
-            <p>HUMAN SOLUTIONS</p>
+            <p>PERSONALIZED RECRUITMENT SOLUTIONS</p>
             <p>
-              At GTS, we bring together traditional expertise from each of our
-              partners with a data-driven approach to create a unique value
-              proposition for our research. In today's rapidly changing world,
-              making strategic decisions about People & Organization requires a
-              combination of sophisticated data and tools, and that is exactly
-              what we offer. Our company's motto is "Tailoring Your Success." As
-              Executive Search Tailors, we measure the organizational context
-              and project area to create a customized solution.
+              At our core, we excel in connecting the right candidate with the
+              right client, ensuring successful and enduring placements. By
+              prioritizing genuine human connections, we aim to refine our
+              recruitment approach across diverse markets by 2030.
+              <br /> <br />
             </p>
           </PagesTextBlock>
           <WhatWeDoAccordion />

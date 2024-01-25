@@ -10,10 +10,11 @@ export const WhatWeDo = styled("section")(({}) => ({
 }));
 export const PagesBackgroundSec = styled("div")(({ theme, background }) => ({
   color: "white",
-  height: "660px",
+  height: "770px",
   position: "relative",
+  paddingTop: "70px",
   // background: `url(${letterG.src}) -430px -350px no-repeat, #0977c1 url(${letterG.src}) 65vw -170px no-repeat`,
-  backgroundImage: `linear-gradient(rgba(20, 106, 164, 0.3), rgba(20, 106, 164, 0.3)), url(${letterG.src}),url(${letterG.src}), url(${background.src})`,
+  backgroundImage: `linear-gradient(rgb(20 106 164 / 75%), rgba(20, 106, 164, 0.3)), url(${letterG.src}),url(${letterG.src}), url(${background.src})`,
   backgroundPosition: "center center, -450px -250px, 70vw 100px, center center",
   backgroundRepeat: "no-repeat, no-repeat, no-repeat",
   backgroundSize: "auto, auto, auto, cover",
@@ -40,6 +41,22 @@ export const PagesBackgroundSec = styled("div")(({ theme, background }) => ({
   "& > img": {
     position: "absolute",
     bottom: "0",
+  },
+  "@media only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)":
+    {
+      backgroundAttachment: "local",
+    },
+  "@media all and (max-width: 650px)": {
+    padding: "70px 50px 0 50px",
+    "& > p:first-of-type": {
+      fontSize: "42px",
+      lineHeight: "52px",
+      marginTop: "180px",
+    },
+    "& > p:nth-of-type(2)": {
+      fontSize: "16px",
+      lineHeight: "25px",
+    },
   },
 }));
 
@@ -73,6 +90,17 @@ export const PagesTextBlock = styled("div")(({}) => ({
     fontFamily: "DM Sans, sans-serif",
     fontWeight: "400",
     color: "#636366",
+  },
+  "@media all and (max-width: 600px)": {
+    position: "static",
+  },
+}));
+
+export const MainAccordion = styled("div")(({}) => ({
+  marginBottom: "100px",
+
+  "@media all and (max-width: 850px)": {
+    marginTop: "100px",
   },
 }));
 

@@ -27,11 +27,22 @@ export const FirstSecInner1 = styled("div")(({}) => ({
   margin: "0 auto",
   color: "white",
   padding: "0 24px",
+  // transform: "translateX(-100vw)",
+  // animation: "slideIn 1s forwards",
+  // animationDelay: "1s",
   "@media all and (max-width: 600px)": {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
   },
+  // "@keyframes slideIn": {
+  //   "0%": {
+  //     transform: "translateX(-100vw)", // Начальное положение за пределами экрана
+  //   },
+  //   "100%": {
+  //     transform: "translateX(0)", // Конечное положение на экране
+  //   },
+  // },
 }));
 
 export const MainText = styled("p")(({}) => ({

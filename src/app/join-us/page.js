@@ -25,7 +25,7 @@ export default function () {
     <JoinUs>
       <PagesBackgroundSec background={bgrnd}>
         <p>Join our tribe</p>
-        <p>THANK YOU FOR YOUR INTEREST IN GTS</p>
+        <p>DISCOVER YOUR CAREER JOURNEY WITH GTS</p>
         <Image alt="picture of a wave backdrop background" src={wave} />
       </PagesBackgroundSec>
       <Container maxWidth="lg">
@@ -33,14 +33,15 @@ export default function () {
           <PagesTextBlock>
             <p>WELCOME TO OUR CAREER PAGE</p>
             <p>
-              At GTS, we specialize in Executive Search and tailored Head
-              Hunting. We work with a range of clients across various
-              industries, helping them find the best candidates for leadership
-              positions within their organization. We are constantly looking for
-              new "Candidate consultants" and "Business Developers" to join our
-              team. If you are passionate about helping others achieve their
-              career goals and you have a background in Recruitment or Business
-              Development, we would love to hear from you.
+              At GTS, we excel in Executive Search and personalized Headhunting
+              services. Collaborating with diverse clients spanning multiple
+              industries, we assist them in discovering top-tier candidates for
+              pivotal leadership roles. Our doors are always open for aspiring
+              'Candidate Consultants' and 'Business Developers' to join our
+              dynamic team. If you're enthusiastic about aiding others in
+              reaching their career aspirations and possess a background in
+              Recruitment or Business Development, we eagerly await your
+              contact.
             </p>
           </PagesTextBlock>
         </JoinUsSec1>

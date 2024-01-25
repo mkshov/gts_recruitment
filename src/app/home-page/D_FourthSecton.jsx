@@ -24,16 +24,19 @@ export default function D_FourthSection() {
           Services & <br /> Case Studies
         </SecSectionInner1FirstTitle>
         <SecSectionInner1SecondTitle>
-          - is a leading business recruitment company. We offer highly qualified
-          specialists to meet unique business needs.
+          Our strength lies in tailoring our processes to your specific
+          requirements, ensuring that every placement is as exceptional as the
+          individuals we source.
         </SecSectionInner1SecondTitle>
       </FourthSectionInner1>
       <FourthSectionInner2>
         <FourthSectionBigCard bgrnd={true}></FourthSectionBigCard>
-        <FourthSectionCards>
-          <FourthSectionCard bgrnd={true} idx={0} />
-          <FourthSectionCard bgrnd={true} idx={1} />
-        </FourthSectionCards>
+        <div data-aos="fade-up">
+          <FourthSectionCards>
+            <FourthSectionCard bgrnd={true} idx={0} />
+            <FourthSectionCard bgrnd={true} idx={1} />
+          </FourthSectionCards>
+        </div>
       </FourthSectionInner2>
     </FourthSection>
   );

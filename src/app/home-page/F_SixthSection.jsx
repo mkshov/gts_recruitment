@@ -7,6 +7,7 @@ import {
   SixthTextgroup,
   SixthTitle,
 } from "./style";
+import Link from "next/link";
 
 export default function F_SixthSection() {
   return (
@@ -20,9 +21,11 @@ export default function F_SixthSection() {
               people of the world— and so can you.
             </SixthDescription>
           </SixthTextgroup>
-          <ContainedButton bgColor="white" color="#3598DB">
-            Contact Us
-          </ContainedButton>
+          <Link href="/contact-us">
+            <ContainedButton bgColor="white" color="#3598DB">
+              Contact Us
+            </ContainedButton>
+          </Link>
         </SixthSecInner>
       </Container>
     </SixthSec>

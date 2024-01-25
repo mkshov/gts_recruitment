@@ -21,6 +21,10 @@ export const ContactUsInner1 = styled("div")(({}) => ({
     color: "#071B2C",
     marginBottom: "40px",
   },
+  "@media all and (max-width: 650px)": {
+    position: "static",
+    marginTop: "70px",
+  },
 }));
 
 export const ContactUsForm = styled("form")(({}) => ({
@@ -31,6 +35,9 @@ export const ContactUsForm = styled("form")(({}) => ({
 export const ContactUsFormInner = styled("div")(({}) => ({
   display: "flex",
   gap: "25px",
+  "@media all and (max-width: 550px)": {
+    flexDirection: "column",
+  },
 }));
 
 export const ContactUsInner2 = styled("div")(({}) => ({
@@ -39,6 +46,11 @@ export const ContactUsInner2 = styled("div")(({}) => ({
   justifyContent: "center",
   marginTop: "-100px",
   paddingBottom: "100px",
+  "@media all and (max-width: 650px)": {
+    marginTop: "70px",
+    flexDirection: "column",
+    alignItems: "center",
+  },
 }));
 export const ContactUsInner2Card = styled("div")(({}) => ({
   textAlign: "center",

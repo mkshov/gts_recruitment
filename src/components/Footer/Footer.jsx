@@ -23,6 +23,7 @@ import {
   RightDot,
   Twitter,
 } from "./styled";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -32,11 +33,11 @@ export default function Footer() {
           <FtrInrBlock1>
             <Image src={logo} alt="logo gts" />
             <FooterNav>
-              <a href="">Who we are</a>
-              <a href="">What we do</a>
-              <a href="">Join our tribe</a>
-              <a href="">Contact us</a>
-              <a href="">Reviews</a>
+              <Link href="/about-us">Who we are</Link>
+              <Link href="/what-we-do">What we do</Link>
+              <Link href="/join-us">Join our tribe</Link>
+              <Link href="/contact-us">Contact us</Link>
+              <Link href="/reviews">Reviews</Link>
             </FooterNav>
             <FtrParentForm>
               <p>Newsletter</p>
