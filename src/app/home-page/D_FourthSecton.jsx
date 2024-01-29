@@ -15,6 +15,8 @@ import {
   FourthSectionBigCardImg,
 } from "./style";
 
+import blur from "@/images/blur.png";
+
 export default function D_FourthSection() {
   return (
     <FourthSection>

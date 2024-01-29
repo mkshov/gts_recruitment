@@ -21,6 +21,7 @@ import {
 } from "./style";
 import ContainedButton from "@/components/Buttons/ContainedButton";
 import { CircularProgress } from "@mui/material";
+import PhoneInput from "react-phone-input-2";
 
 export default function G_ContactForm({
   form,
@@ -31,6 +32,7 @@ export default function G_ContactForm({
   lastName,
   sendEmail,
   isLoading,
+  validPhone,
   handleEmailChange,
   handleNameChange,
   handleMessageChange,
@@ -84,13 +86,18 @@ export default function G_ContactForm({
         </ContactSectionFormInner>
         <ContactSectionFormInner>
           <p>Phone</p>
-          <input
-            name="user_phone"
-            type="number"
+          <PhoneInput
+            className="contact_input_phone phone_input"
+            country={"kg"}
             value={phone}
+            ref={form}
             onChange={handlePhoneChange}
-            placeholder="+1 862732625134"
+            inputProps={{
+              required: true,
+              name: "user_phone",
+            }}
           />
+          {!validPhone && <p>Please enter a valid 10-digit phone number.</p>}
         </ContactSectionFormInner>
         <ContactSectionFormInner height="132px">
           <p>How can we help?</p>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import wave from "@/images/Wave.png";
-import bgrnd from "@/images/bgrnd2.png";
+import bgrnd from "@/images/lugano.jpg";
 import {
   PagesBackgroundSec,
   PagesTextBlock,

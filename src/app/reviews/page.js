@@ -5,7 +5,7 @@ import people3 from "@/images/people3.png";
 import people4 from "@/images/svg/people4.svg";
 import quote from "@/images/svg/quote.svg";
 import wave from "@/images/Wave.png";
-import bgrnd from "@/images/bgrnd5.png";
+import bgrnd from "@/images/germany.jpg";
 import avatar from "@/images/avatar.png";
 
 import { Container } from "@mui/material";

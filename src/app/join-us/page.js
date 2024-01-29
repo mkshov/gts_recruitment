@@ -1,5 +1,5 @@
 import wave from "@/images/Wave.png";
-import bgrnd from "@/images/bgrnd3.png";
+import bgrnd from "@/images/frankfurt.jpg";
 import likeIcon from "@/images/svg/likeIcon.svg";
 import chartIcon from "@/images/svg/chartIcon.svg";
 import briefcase from "@/images/svg/briefcase.svg";

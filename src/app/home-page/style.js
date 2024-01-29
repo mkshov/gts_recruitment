@@ -6,11 +6,11 @@ import image4 from "@/images/image4.jpeg";
 import image5 from "@/images/image5.jpeg";
 import image6 from "@/images/image6.jpeg";
 import letterG from "@/images/svg/letterG.svg";
-import banner from "@/images/Banner.png";
+import banner from "@/images/lugano.jpg";
 
 export const FirstSec = styled("section")(({}) => ({
   position: "relative",
-  backgroundImage: `url(${banner.src})`,
+  backgroundImage: ` url(${banner.src})`,
   backgroundSize: "cover",
   backgroundPositionX: "-1px",
   height: "100vh",
@@ -21,28 +21,34 @@ export const FirstSec = styled("section")(({}) => ({
   paddingBottom: "110px",
 }));
 
+export const Blur = styled("div")(({}) => ({
+  position: "absolute",
+  top: "-20vw",
+  zIndex: -1,
+  alignSelf: "center",
+  maxWidth: "1000px",
+  "@media all and (max-width: 600px)": {
+    top: "-80px",
+  },
+}));
+
 export const FirstSecInner1 = styled("div")(({}) => ({
-  maxWidth: "570px",
   textAlign: "center",
   margin: "0 auto",
   color: "white",
-  padding: "0 24px",
-  // transform: "translateX(-100vw)",
-  // animation: "slideIn 1s forwards",
-  // animationDelay: "1s",
-  "@media all and (max-width: 600px)": {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
+  padding: "35px 24px",
+  // boxShadow: " 0px 0px 155px #0098ff",
+  // background: "#0098ff6e",
+  position: "relative",
+  width: "100%",
+  display: "flex",
+  alignItems: "center",
+  flexDirection: "column",
+  borderRadius: "59px",
+  "@media all and (max-width: 750px)": {
+    // boxShadow: " 0px 0px 155px #0098ffad",
+    // background: "#0098ff4a",
   },
-  // "@keyframes slideIn": {
-  //   "0%": {
-  //     transform: "translateX(-100vw)", // Начальное положение за пределами экрана
-  //   },
-  //   "100%": {
-  //     transform: "translateX(0)", // Конечное положение на экране
-  //   },
-  // },
 }));
 
 export const MainText = styled("p")(({}) => ({
@@ -52,6 +58,7 @@ export const MainText = styled("p")(({}) => ({
   fontWeight: 600,
   lineHeight: "90px",
   letterSpacing: "0.36px",
+  maxWidth: "570px",
   "@media all and (max-width: 600px)": {
     fontSize: "42px",
     lineHeight: "52px",
@@ -457,6 +464,7 @@ export const ContactSectionInner = styled("div")(({}) => ({
     maxWidth: "420px",
   },
   maxHeight: "410px",
+  boxShadow: "5px 5px 271px #0098ff29",
   display: "flex",
   flexDirection: "column",
   gap: "40px",
@@ -533,7 +541,7 @@ export const ContactSectionForm = styled("form")(({}) => ({
 
 export const ContactSectionFormInner = styled("div")(({ theme, height }) => ({
   width: "100%",
-  p: {
+  "p:first-of-type": {
     fontFamily: " DM Sans, sans-serif",
     fontSize: "14px",
     fontStyle: "normal",
@@ -543,18 +551,36 @@ export const ContactSectionFormInner = styled("div")(({ theme, height }) => ({
     color: "#09080D",
     marginBottom: "8px",
   },
-  input: {
+  "p:last-child": {
+    fontFamily: " DM Sans, sans-serif",
+    fontSize: "13px",
+    fontStyle: "normal",
+    fontWeight: 600,
+    lineHeight: "22px" /* 116.667% */,
+    letterSpacing: "0.08px",
+    color: "#ff0000d6",
+    ".react-tel-input .form-control": {
+      padding: "4px",
+    },
+  },
+  "input, .contact_input_phone .form-control": {
     width: "100%",
     height: "52px",
     padding: "16px",
     paddingLeft: "16px",
+    fontSize: "15px",
     borderRadius: "8px",
     border: "1px solid #E9EBED",
+    fontFamily: " DM Sans, sans-serif",
+
     outline: "none",
     textAlign: "start",
     "&:focus": {
       border: "2px solid #3598dbab",
     },
+  },
+  ".phone_input .form-control": {
+    paddingLeft: "50px",
   },
   textarea: {
     width: "100%",
@@ -566,6 +592,7 @@ export const ContactSectionFormInner = styled("div")(({ theme, height }) => ({
     // transition: "border 0.3s ease-in-out",
     outline: "none",
     height: height || "auto",
+    fontFamily: " DM Sans, sans-serif",
 
     "&:focus": {
       border: "2px solid #3598db",

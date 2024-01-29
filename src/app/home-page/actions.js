@@ -4,6 +4,7 @@ import G_ContactForm from "./G_ContactForm";
 
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import "react-phone-input-2/lib/style.css";
 
 export default function ContactForm() {
   const form = useRef();
@@ -14,6 +15,7 @@ export default function ContactForm() {
   const [lastName, setLastName] = useState("");
   const [message, setMessage] = useState("");
   const [isValid, setIsValid] = useState(false);
+  const [validPhone, setValidPhone] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleEmailChange = (event) => {
@@ -35,9 +37,15 @@ export default function ContactForm() {
     const newMessage = e.target.value;
     setMessage(newMessage);
   };
-  const handlePhoneChange = (e) => {
-    const newPhone = e.target.value;
-    setPhone(newPhone);
+  const handlePhoneChange = (value) => {
+    // const newPhone = e.target.value;
+    setPhone(value);
+    setValidPhone(validatePhoneNumber(value));
+  };
+  const validatePhoneNumber = (phoneNumber) => {
+    const phoneNumberPattern = /^\d{10,}$/; // Validates a 10-digit phone number
+
+    return phoneNumberPattern.test(phoneNumber);
   };
 
   const errorAlert = (text) => {
@@ -113,6 +121,7 @@ export default function ContactForm() {
       message={message}
       lastName={lastName}
       isLoading={isLoading}
+      validPhone={validPhone}
       sendEmail={sendEmail}
       handleEmailChange={handleEmailChange}
       handleNameChange={handleNameChange}

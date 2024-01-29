@@ -24,7 +24,7 @@ import {
   SecSectionBigCardImg,
 } from "../home-page/style";
 
-import bgrnd from "@/images/bgrnd.jpeg";
+import bgrnd from "@/images/zurich.jpg";
 import wave from "@/images/Wave.png";
 
 export default function AboutPage() {

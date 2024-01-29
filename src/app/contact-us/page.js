@@ -4,7 +4,7 @@ import Image from "next/image";
 import wave from "@/images/Wave.png";
 import phone from "@/images/svg/phoneIcon.svg";
 import email from "@/images/svg/emailIcon.svg";
-import bgrnd from "@/images/bgrnd4.png";
+import bgrnd from "@/images/milan.jpg";
 
 import { PagesBackgroundSec } from "../what-we-do/style";
 
