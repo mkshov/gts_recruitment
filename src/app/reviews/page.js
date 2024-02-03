@@ -1,12 +1,13 @@
 import Image from "next/image";
-import people1 from "@/images/svg/people1.svg";
-import people2 from "@/images/svg/people2.svg";
-import people3 from "@/images/people3.png";
-import people4 from "@/images/svg/people4.svg";
+import people1 from "@/images/avatar5.webp";
+import people2 from "@/images/avatar4.png";
+import people3 from "@/images/avatar2.png";
+import people4 from "@/images/avatar3.webp";
+import people5 from "@/images/svg/girlA.svg";
+import people6 from "@/images/svg/avatar6.svg";
 import quote from "@/images/svg/quote.svg";
 import wave from "@/images/Wave.png";
-import bgrnd from "@/images/germany.jpg";
-import avatar from "@/images/avatar.png";
+import bgrnd from "@/images/moritz.jpg";
 
 import { Container } from "@mui/material";
 import { PagesBackgroundSec } from "../what-we-do/style";
@@ -37,9 +38,9 @@ export default function page() {
             <ReviewsCard>
               <Image src={quote} alt="quote up" />
               <ReviewsAvatar>
-                <Image src={people1} alt="review people avatar" />
+                <Image src={people4} alt="review people avatar" />
                 <ReviewsAvatarText>
-                  <p>Sarah Conor</p>
+                  <p>Sarah C.</p>
                   <p>Business woman</p>
                 </ReviewsAvatarText>
               </ReviewsAvatar>
@@ -54,9 +55,9 @@ export default function page() {
             <ReviewsCard>
               <Image src={quote} alt="quote up" />
               <ReviewsAvatar>
-                <Image src={people2} alt="review people avatar" />
+                <Image src={people5} alt="review people avatar" />
                 <ReviewsAvatarText>
-                  <p>Marta Freedman</p>
+                  <p>Marta F.</p>
                   <p>Business woman</p>
                 </ReviewsAvatarText>
               </ReviewsAvatar>
@@ -73,7 +74,7 @@ export default function page() {
               <ReviewsAvatar>
                 <Image src={people3} alt="review people avatar" />
                 <ReviewsAvatarText>
-                  <p>Tom Mish</p>
+                  <p>Tom M.</p>
                   <p>Project Manager</p>
                 </ReviewsAvatarText>
               </ReviewsAvatar>
@@ -88,9 +89,9 @@ export default function page() {
             <ReviewsCard>
               <Image src={quote} alt="quote up" />
               <ReviewsAvatar>
-                <Image src={people4} alt="review people avatar" />
+                <Image src={people2} alt="review people avatar" />
                 <ReviewsAvatarText>
-                  <p>Carla Uclary</p>
+                  <p>Carla U.</p>
                   <p>Model</p>
                 </ReviewsAvatarText>
               </ReviewsAvatar>
@@ -105,9 +106,9 @@ export default function page() {
             <ReviewsCard>
               <Image src={quote} alt="quote up" />
               <ReviewsAvatar>
-                <Image src={avatar} alt="review people avatar" />
+                <Image src={people6} alt="review people avatar" />
                 <ReviewsAvatarText>
-                  <p>Lucas Mitchell</p>
+                  <p>Lucas M.</p>
                   <p>Software Developer</p>
                 </ReviewsAvatarText>
               </ReviewsAvatar>
@@ -122,9 +123,9 @@ export default function page() {
             <ReviewsCard>
               <Image src={quote} alt="quote up" />
               <ReviewsAvatar>
-                <Image src={avatar} alt="review people avatar" />
+                <Image src={people1} alt="review people avatar" />
                 <ReviewsAvatarText>
-                  <p>Emma Thompson</p>
+                  <p>Emma T.</p>
                   <p>Financial Analyst</p>
                 </ReviewsAvatarText>
               </ReviewsAvatar>

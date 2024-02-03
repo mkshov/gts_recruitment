@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import { Button, Container } from "@mui/material";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import TelegramIcon from "@mui/icons-material/Telegram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import logo from "@/images/svg/logo.svg";
@@ -31,7 +31,9 @@ export default function Footer() {
       <Container maxWidth="lg">
         <FooterInner>
           <FtrInrBlock1>
-            <Image src={logo} alt="logo gts" />
+            <Link href="/">
+              <Image src={logo} alt="logo gts" />
+            </Link>
             <FooterNav>
               <Link href="/about-us">Who we are</Link>
               <Link href="/what-we-do">What we do</Link>
@@ -58,12 +60,22 @@ export default function Footer() {
           <FtrInrBlock2>
             <p>© 2023 GTS Recruitment®</p>
             <FtrSocials>
-              <FtrIcon>
-                <LinkedInIcon />
-              </FtrIcon>
-              <FtrIcon>
-                <TwitterIcon />
-              </FtrIcon>
+              <Link
+                target="_blank"
+                href="https://www.instagram.com/adacourses/"
+              >
+                <FtrIcon>
+                  <LinkedInIcon />
+                </FtrIcon>
+              </Link>
+              <Link
+                target="_blank"
+                href="https://www.instagram.com/adacourses/"
+              >
+                <FtrIcon>
+                  <TelegramIcon />
+                </FtrIcon>
+              </Link>
             </FtrSocials>
           </FtrInrBlock2>
         </FooterInner>

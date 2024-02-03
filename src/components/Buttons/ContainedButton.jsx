@@ -30,11 +30,11 @@ const ContainedButton = ({
     width: width || null,
     height: height || null,
     backgroundColor: bgColor ? `${bgColor} !important` : "#3598DB !important",
-    border: hover ? "1px solid #ffffffb3" : null,
+    border: hover ? "1px solid #ffffffb3" : "none",
     ...styles, // Можете передать дополнительные стили извне
     "&:hover": {
       boxShadow: "none",
-      border: "1px solid #ffffff54",
+      border: hover ? "1px solid #ffffff54" : "none",
     },
   };
 

@@ -88,7 +88,7 @@ export default function G_ContactForm({
           <p>Phone</p>
           <PhoneInput
             className="contact_input_phone phone_input"
-            country={"kg"}
+            country={"de"}
             value={phone}
             ref={form}
             onChange={handlePhoneChange}

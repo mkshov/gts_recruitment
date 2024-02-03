@@ -8,14 +8,43 @@ import SaveIcon from "@mui/icons-material/Save";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import TelegramIcon from "@mui/icons-material/Telegram";
 import styled from "@emotion/styled";
+import Link from "next/link";
 
 const actions = [
-  { icon: <EmailIcon sx={{ color: "#fff" }} />, name: "Email" },
-  { icon: <WhatsAppIcon sx={{ color: "#fff" }} />, name: "WhatsApp" },
-  { icon: <LinkedInIcon sx={{ color: "#fff" }} />, name: "LinkedIn" },
-  { icon: <TwitterIcon sx={{ color: "#fff" }} />, name: "Twitter" },
+  {
+    icon: (
+      <Link target="_blank" href="https://www.instagram.com/adacourses/">
+        <EmailIcon sx={{ color: "#fff" }} />
+      </Link>
+    ),
+    name: "Email",
+  },
+  {
+    icon: (
+      <Link target="_blank" href="https://www.instagram.com/adacourses/">
+        <WhatsAppIcon sx={{ color: "#fff" }} />
+      </Link>
+    ),
+    name: "WhatsApp",
+  },
+  {
+    icon: (
+      <Link target="_blank" href="https://www.instagram.com/adacourses/">
+        <LinkedInIcon sx={{ color: "#fff" }} />
+      </Link>
+    ),
+    name: "LinkedIn",
+  },
+  {
+    icon: (
+      <Link target="_blank" href="https://www.instagram.com/adacourses/">
+        <TelegramIcon sx={{ color: "#fff" }} />
+      </Link>
+    ),
+    name: "Telegram",
+  },
 ];
 
 export const MySpeedDial = styled(SpeedDial)(({}) => ({

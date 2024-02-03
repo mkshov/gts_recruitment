@@ -19,6 +19,11 @@ export const FtrInrBlock1 = styled("div")(({}) => ({
 
   img: {
     width: "61px",
+    transition: ".5s",
+    cursor: "pointer",
+    "&:hover": {
+      transform: "scale(1.1)",
+    },
   },
   "@media all and (max-width: 930px)": {
     flexDirection: "column",

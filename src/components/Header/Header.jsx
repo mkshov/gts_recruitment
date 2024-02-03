@@ -36,7 +36,11 @@ export default function Header({
                 isHidden ? (
                   <Image src={logo} alt="GTS Logo logo recruitment" />
                 ) : (
-                  <Image src={logoWhite} alt="GTS Logo logo recruitment" />
+                  <Image
+                    priority
+                    src={logoWhite}
+                    alt="GTS Logo logo recruitment"
+                  />
                 )
               ) : (
                 <Image src={logoWhite} alt="GTS Logo logo recruitment" />

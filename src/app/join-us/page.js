@@ -19,6 +19,7 @@ import {
 import JoinUsAccardion from "./Accardion";
 import { PagesBackgroundSec, PagesTextBlock } from "../what-we-do/style";
 import ContainedButton from "@/components/Buttons/ContainedButton";
+import Link from "next/link";
 
 export default function () {
   return (
@@ -80,7 +81,9 @@ export default function () {
       <JoinUsSec2Inner3>
         <Container maxWidth="lg">
           <JoinUsAccardion />
-          <ContainedButton>Contact us</ContainedButton>
+          <Link href="contact-us">
+            <ContainedButton>Contact us</ContainedButton>
+          </Link>
         </Container>
       </JoinUsSec2Inner3>
     </JoinUs>

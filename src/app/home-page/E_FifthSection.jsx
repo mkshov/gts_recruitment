@@ -14,16 +14,22 @@ import {
 
 export default function E_FifthSection() {
   return (
-    <FifthSec>
+    <FifthSec data-aos="zoom-out-right">
       <FifthSecInner>
-        <FifthSecBlock1>
+        <FifthSecBlock1
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
           <p>For Dear Clients</p>
           <p>
             Why <br /> businesses turn <br /> to GTS
           </p>
         </FifthSecBlock1>
         <FifthSecBlock2>
-          <FifthSecBlock2Card>
+          <FifthSecBlock2Card
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             <Image src={star} alt="star icon gts" />
             <FifthSecBlock2InnerText>
               <p>Proof of quality</p>
@@ -33,7 +39,10 @@ export default function E_FifthSection() {
               </p>
             </FifthSecBlock2InnerText>
           </FifthSecBlock2Card>
-          <FifthSecBlock2Card>
+          <FifthSecBlock2Card
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             <Image src={supportIcon} alt="support icon gts" />
             <FifthSecBlock2InnerText>
               <p>Safe and secure</p>
@@ -43,7 +52,10 @@ export default function E_FifthSection() {
               </p>
             </FifthSecBlock2InnerText>
           </FifthSecBlock2Card>
-          <FifthSecBlock2Card>
+          <FifthSecBlock2Card
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             <Image src={coinIcon} alt="coin icon gts" />
             <FifthSecBlock2InnerText>
               <p>No cost until you hire</p>

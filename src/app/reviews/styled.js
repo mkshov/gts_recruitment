@@ -38,6 +38,7 @@ export const ReviewsAvatar = styled("div")(({}) => ({
     objectFit: "cover",
     borderRadius: "80px",
     objectPosition: "top",
+    // display: "none",
   },
 }));
 export const ReviewsAvatarText = styled("div")(({}) => ({

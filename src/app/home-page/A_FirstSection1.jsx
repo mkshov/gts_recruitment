@@ -42,7 +42,7 @@ export default function A_FirstSection() {
         </Description>
         <Link href="contact-us">
           <ContainedButton
-            hover
+            hover={true}
             styles={{ boxShadow: "3px 3px 10px #ffffffb0" }}
           >
             Contacts Us

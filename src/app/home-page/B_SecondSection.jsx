@@ -19,7 +19,7 @@ import {
 export default function B_SecondSection() {
   return (
     <SecSection>
-      <SecSectionInner1>
+      <SecSectionInner1 data-aos="fade-right">
         <Image src={logo} alt="GTS Recruitment logo white" />
         <SecSectionInner1FirstTitle>
           About "GTS Recruitment
@@ -33,7 +33,7 @@ export default function B_SecondSection() {
           the candidate’s professionalism.
         </SecSectionInner1SecondTitle>
       </SecSectionInner1>
-      <SecSectionInner2>
+      <SecSectionInner2 data-aos="zoom-in">
         <SecSectionCards>
           <SecSectionCard height="274px">
             <SecSectionCardImage
