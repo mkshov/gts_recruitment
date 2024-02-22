@@ -38,6 +38,7 @@ export default function G_ContactForm({
   handleMessageChange,
   handlePhoneChange,
   handleLastNameChange,
+  sendEmailValidationRequest,
 }) {
   return (
     <ContactSection>

@@ -5,12 +5,12 @@ import "./globals.css";
 import Loading from "./loading";
 import AOSWrapper from "@/utils/aosInit";
 import theme from "@/utils/ThemeRegistry";
-import Footer from "@/components/Footer/Footer";
 import GTSSpeedDial from "@/components/SpeedDial";
 import Header from "@/components/Header/HeaderFunctions";
 
 import { ToastContainer } from "react-toastify";
 import { CssBaseline, ThemeProvider } from "@mui/material";
+import MainFooter from "@/components/Footer/FooterFunctions";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +32,7 @@ export default function RootLayout({ children, params }) {
           <body className={inter.className}>
             <Header />
             <Suspense fallback={<Loading />}>{children}</Suspense>
-            <Footer />
+            <MainFooter />
             <GTSSpeedDial />
             <ToastContainer />
           </body>

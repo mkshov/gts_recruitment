@@ -5,6 +5,8 @@ import G_ContactForm from "./G_ContactForm";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-phone-input-2/lib/style.css";
+import axios from "axios";
+import { postRequest } from "../api";
 
 export default function ContactForm() {
   const form = useRef();
@@ -17,6 +19,7 @@ export default function ContactForm() {
   const [isValid, setIsValid] = useState(false);
   const [validPhone, setValidPhone] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
+  const [response, setResponse] = useState("");
 
   const handleEmailChange = (event) => {
     const newEmail = event.target.value;
@@ -42,6 +45,41 @@ export default function ContactForm() {
     setPhone(value);
     setValidPhone(validatePhoneNumber(value));
   };
+  const sendEmail = async (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    setIsLoading(true);
+    if (!email.trim() || !name.trim() || !message.trim()) {
+      setIsLoading(false);
+      errorAlert("Fill in all fields!");
+      return;
+    }
+    let data = {
+      email: email,
+      message: `
+        Message from Home Page (contact-form):
+        Name: ${name}
+        Email: ${email}
+        Phone: +${phone}
+        Message:
+                ${message}
+      `,
+    };
+    try {
+      await postRequest(data);
+      successAlert();
+    } catch (err) {
+      console.log("AXIOS ERROR: ", err);
+      errorAlert(`Error! Status ${err.status}`);
+    } finally {
+      setEmail("");
+      setName("");
+      setMessage("");
+      setPhone("");
+      setIsLoading(false);
+    }
+  };
+
   const validatePhoneNumber = (phoneNumber) => {
     const phoneNumberPattern = /^\d{10,}$/; // Validates a 10-digit phone number
 
@@ -72,44 +110,6 @@ export default function ContactForm() {
       progress: undefined,
       theme: "dark",
     });
-  };
-  const sendEmail = (e) => {
-    e.stopPropagation();
-    e.preventDefault();
-    setIsLoading(true);
-    if (!email.trim() || !name.trim() || !message.trim()) {
-      setIsLoading(false);
-      errorAlert("Fill in all fields!");
-      return;
-    }
-
-    emailjs
-      .sendForm(
-        "service_hg10u3m",
-        "template_0115ysi",
-        form.current,
-        "oJtvOAu4Zzy4cB-RM"
-      )
-      .then(
-        (result) => {
-          successAlert();
-          setEmail("");
-          setName("");
-          setMessage("");
-          setPhone("");
-        },
-        (error) => {
-          console.log(error);
-          errorAlert(`Error! Status ${error.status}`);
-          setEmail("");
-          setName("");
-          setMessage("");
-          setPhone("");
-        }
-      )
-      .finally(() => {
-        setIsLoading(false);
-      });
   };
 
   return (

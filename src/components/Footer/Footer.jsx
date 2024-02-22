@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-import { Button, Container } from "@mui/material";
+import { Button, CircularProgress, Container } from "@mui/material";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
@@ -25,7 +25,13 @@ import {
 } from "./styled";
 import Link from "next/link";
 
-export default function Footer() {
+export default function Footer({
+  form,
+  sendEmail,
+  handleEmailChange,
+  email,
+  isLoading,
+}) {
   return (
     <GTSFooter>
       <Container maxWidth="lg">
@@ -43,10 +49,24 @@ export default function Footer() {
             </FooterNav>
             <FtrParentForm>
               <p>Newsletter</p>
-              <FooterForm>
-                <input placeholder="Your email here" type="text" />
-                <ContainedButton styles={{ padding: "16px 32px" }}>
-                  Send
+              <FooterForm ref={form} onSubmit={sendEmail}>
+                <input
+                  value={email}
+                  onChange={handleEmailChange}
+                  placeholder="Your email here"
+                  name="user_email"
+                  type="email"
+                />
+                <ContainedButton
+                  width="103.94px"
+                  height="60px"
+                  styles={{ padding: "16px 32px" }}
+                >
+                  {isLoading ? (
+                    <CircularProgress sx={{ color: "#fff" }} size={30} />
+                  ) : (
+                    "Send"
+                  )}
                 </ContainedButton>
               </FooterForm>
             </FtrParentForm>
