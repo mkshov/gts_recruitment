@@ -8,6 +8,12 @@ import axios from "axios";
 import { postRequest } from "../api";
 import Contact from ".";
 
+export const metadata = {
+  title: "GTS Recruitment - contact us",
+  description:
+    "If you're enthusiastic about aiding others in reaching their career aspirations and possess a background in Recruitment or Business Development, we eagerly await your contact.",
+};
+
 export default function ContactPage() {
   const form = useRef();
 

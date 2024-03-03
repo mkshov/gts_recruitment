@@ -32,11 +32,11 @@ export const PagesBackgroundSec = styled("div")(({ theme, background }) => ({
     fontWeight: "700",
   },
   "& > p:nth-of-type(2)": {
-    fontSize: "20px",
+    fontSize: "21px",
     lineHeight: "36px",
     fontFamily: "DM Sans, sans-serif",
     fontWeight: "600",
-    maxWidth: "810px",
+    maxWidth: "690px",
   },
   "& > img": {
     position: "absolute",
@@ -78,14 +78,14 @@ export const PagesTextBlock = styled("div")(({}) => ({
   top: "340px",
 
   "& > p:first-of-type": {
-    fontSize: "23px",
+    fontSize: "21px",
     lineHeight: "31px",
     fontFamily: "DM Sans, sans-serif",
     fontWeight: "700",
     marginBottom: "16px",
   },
   "& > p:nth-of-type(2)": {
-    fontSize: "18px",
+    fontSize: "16px",
     lineHeight: "26px",
     fontFamily: "DM Sans, sans-serif",
     fontWeight: "400",
@@ -112,7 +112,7 @@ export const MyAccordion = styled(Accordion)(({ width }) => ({
 }));
 export const MyAccordionTitle = styled("p")(({}) => ({
   color: "#000",
-  fontSize: "17px",
+  fontSize: "21px",
   lineHeight: "28px",
   fontFamily: "DM Sans, sans-serif",
   fontWeight: "600",

@@ -88,6 +88,10 @@ export const FooterForm = styled("form")(({}) => ({
   },
   "@media all and (max-width: 560px)": {
     flexDirection: "column",
+    alignItems: "center",
+    button: {
+      width: "100%",
+    },
   },
 }));
 

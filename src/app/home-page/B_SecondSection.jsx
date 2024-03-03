@@ -22,7 +22,7 @@ export default function B_SecondSection() {
       <SecSectionInner1 data-aos="fade-right">
         <Image src={logo} alt="GTS Recruitment logo white" />
         <SecSectionInner1FirstTitle>
-          About "GTS Recruitment
+          About "GTS Recruitment"
         </SecSectionInner1FirstTitle>
         <SecSectionInner1SecondTitle>
           - is a leading business recruitment company. We offer highly qualified

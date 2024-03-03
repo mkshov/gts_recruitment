@@ -20,6 +20,12 @@ import {
   ReviewsInner,
   ReviewsMain,
 } from "./styled";
+export const metadata = {
+  title: "GTS Recruitment - reviews",
+  description:
+    "Cooperation with GTS Recruitment has become a key point in our search for highly qualified specialists. Their professionalism, efficiency and unique recruitment method allowed us to form a strong team of experts. We recommend GTS Recruitment as a reliable partner in personnel solutions.",
+};
+
 export default function page() {
   return (
     <Reviews>

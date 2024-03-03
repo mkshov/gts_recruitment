@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import wave from "@/images/Wave.png";
-import phone from "@/images/svg/phoneIcon.svg";
+import phoneIcon from "@/images/svg/phoneIcon.svg";
 import email from "@/images/svg/emailIcon.svg";
 import bgrnd from "@/images/milan.jpg";
 
@@ -133,7 +133,7 @@ export default function Contact({
               </a>
             </ContactUsInner2Card>
             <ContactUsInner2Card>
-              <Image src={phone} alt="phone icon" />
+              <Image src={phoneIcon} alt="phone icon" />
               <p>Call us</p>
               <p>
                 Call us to speak to a member of our team. We are always happy to

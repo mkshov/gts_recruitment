@@ -14,6 +14,7 @@ export const HeaderBack = styled("div")(({ isHidden, isBack }) => ({
 export const GTSHeader = styled("header")(({}) => ({
   display: "flex",
   alignItems: "center",
+  justifyContent: "center",
   gap: "40px",
   padding: "15px 15px 15px 0",
   borderBottomRightRadius: "20px",

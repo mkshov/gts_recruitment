@@ -21,6 +21,12 @@ import { PagesBackgroundSec, PagesTextBlock } from "../what-we-do/style";
 import ContainedButton from "@/components/Buttons/ContainedButton";
 import Link from "next/link";
 
+export const metadata = {
+  title: "GTS Recruitment - join us!",
+  description:
+    "If you're enthusiastic about aiding others in reaching their career aspirations and possess a background in Recruitment or Business Development, we eagerly await your contact.",
+};
+
 export default function () {
   return (
     <JoinUs>

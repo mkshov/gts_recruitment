@@ -21,9 +21,9 @@ export default function E_FifthSection() {
           data-aos-anchor-placement="bottom-bottom"
         >
           <p>For Dear Clients</p>
-          <p>
+          <h2>
             Why <br /> businesses turn <br /> to GTS
-          </p>
+          </h2>
         </FifthSecBlock1>
         <FifthSecBlock2>
           <FifthSecBlock2Card
@@ -32,7 +32,7 @@ export default function E_FifthSection() {
           >
             <Image src={star} alt="star icon gts" />
             <FifthSecBlock2InnerText>
-              <p>Proof of quality</p>
+              <h3>Proof of quality</h3>
               <p>
                 Check any pro’s work samples, client reviews, and identity
                 verification.
@@ -45,7 +45,7 @@ export default function E_FifthSection() {
           >
             <Image src={supportIcon} alt="support icon gts" />
             <FifthSecBlock2InnerText>
-              <p>Safe and secure</p>
+              <h3>Safe and secure</h3>
               <p>
                 Focus on your work knowing we help protect your data and
                 privacy. We’re here with 24/7 support if you need it.
@@ -58,7 +58,7 @@ export default function E_FifthSection() {
           >
             <Image src={coinIcon} alt="coin icon gts" />
             <FifthSecBlock2InnerText>
-              <p>No cost until you hire</p>
+              <h3>No cost until you hire</h3>
               <p>
                 Interview potential fits for your job, negotiate rates, and only
                 pay for work you approve.

@@ -10,6 +10,12 @@ import {
 import { Container } from "@mui/material";
 import WhatWeDoAccordion from "./Accordion";
 
+export const metadata = {
+  title: "GTS Recruitment - what we do?",
+  description:
+    "At our core, we excel in connecting the right candidate with the right client, ensuring successful and enduring placements. By prioritizing genuine human connections, we aim to refine our recruitment approach across diverse markets by 2030.",
+};
+
 export default function page() {
   return (
     <WhatWeDo>

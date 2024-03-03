@@ -18,6 +18,7 @@ export const metadata = {
   title: "GTS Recruitment",
   description:
     "GTS - is a leading business recruitment company. We offer highly qualified specialists to meet unique business needs. A specialized method of personnel selection aimed at identifying and attracting top specialists for specific positions in the organization.",
+  keywords: "gts recruitment, gts, GTS, hr recruitment",
 };
 
 export default function RootLayout({ children, params }) {

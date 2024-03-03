@@ -51,7 +51,7 @@ export const FirstSecInner1 = styled("div")(({}) => ({
   },
 }));
 
-export const MainText = styled("p")(({}) => ({
+export const MainText = styled("h1")(({}) => ({
   fontFamily: "Poppins, sans-serif",
   fontSize: "72px",
   fontStyle: "normal",
@@ -191,7 +191,7 @@ export const SecSectionInner1 = styled("div")(({}) => ({
   justifyContent: "center",
 }));
 
-export const SecSectionInner1FirstTitle = styled("p")(({}) => ({
+export const SecSectionInner1FirstTitle = styled("h2")(({}) => ({
   color: "#FFF",
   fontFamily: "DM Sans",
   fontSize: "32px",
@@ -361,11 +361,11 @@ export const FifthSecInner = styled("div")(({}) => ({
 }));
 export const FifthSecBlock1 = styled("div")(({}) => ({
   "& > p:first-of-type": {
-    fontSize: "20px",
+    fontSize: "24px",
     lineHeight: "28px",
     fontFamily: "DM Sans",
   },
-  "& > p:nth-of-type(2)": {
+  "& > h2": {
     fontSize: "48px",
     lineHeight: "56px",
     fontFamily: "DM Sans",
@@ -389,13 +389,13 @@ export const FifthSecBlock2Card = styled("div")(({}) => ({
 }));
 export const FifthSecBlock2InnerText = styled("div")(({}) => ({
   maxWidth: "422px",
-  "& > p:first-of-type": {
+  "& > h3": {
     fontSize: "24px",
     lineHeight: "32px",
     fontFamily: "DM Sans",
     marginBottom: "12px",
   },
-  "& > p:nth-of-type(2)": {
+  "& > p": {
     color: "#A6A6A6",
     fontSize: "16px",
     lineHeight: "24px",
@@ -546,7 +546,7 @@ export const ContactSectionFormInner = styled("div")(({ theme, height }) => ({
   width: "100%",
   "p:first-of-type": {
     fontFamily: " DM Sans, sans-serif",
-    fontSize: "14px",
+    fontSize: "16px",
     fontStyle: "normal",
     fontWeight: 600,
     lineHeight: "22px" /* 116.667% */,
@@ -556,7 +556,7 @@ export const ContactSectionFormInner = styled("div")(({ theme, height }) => ({
   },
   "p:last-child": {
     fontFamily: " DM Sans, sans-serif",
-    fontSize: "13px",
+    fontSize: "16px",
     fontStyle: "normal",
     fontWeight: 600,
     lineHeight: "22px" /* 116.667% */,
@@ -571,7 +571,7 @@ export const ContactSectionFormInner = styled("div")(({ theme, height }) => ({
     height: "52px",
     padding: "16px",
     paddingLeft: "16px",
-    fontSize: "15px",
+    fontSize: "16px",
     borderRadius: "8px",
     border: "1px solid #E9EBED",
     fontFamily: " DM Sans, sans-serif",
@@ -694,9 +694,12 @@ export const FourthSectionBigCard = styled("div")(({ theme, bgrnd }) => ({
 
   "@media all and (max-width: 1141px)": {
     width: "100%",
-    height: "350px",
+    height: "415px",
     display: "inline-block",
     backgroundSize: "cover",
+  },
+  "@media all and (max-width: 660px)": {
+    height: "350px",
   },
 }));
 export const FourthSectionBigCardImg = styled(Image)(({}) => ({
