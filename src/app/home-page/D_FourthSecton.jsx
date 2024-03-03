@@ -33,7 +33,7 @@ export default function D_FourthSection() {
       </FourthSectionInner1>
       <FourthSectionInner2>
         <FourthSectionBigCard bgrnd={true}></FourthSectionBigCard>
-        <div data-aos="fade-up">
+        <div className="fourth-section__cards-parent" data-aos="fade-up">
           <FourthSectionCards>
             <FourthSectionCard bgrnd={true} idx={0} />
             <FourthSectionCard bgrnd={true} idx={1} />
